@@ -1,9 +1,11 @@
+import { useState } from 'react'
 import { useStore } from '../store/useStore'
 import { useWordDatabase } from '../hooks/useWordDatabase'
 import { PixelCharacter } from '../components/PixelCharacter'
 import { ProgressBar } from '../components/ProgressBar'
 import { ALL_CHARACTERS } from '../data/characters'
 import { TabBar } from '../components/TabBar'
+import { ShareModal } from '../components/ShareModal'
 import type { AppPage } from '../App'
 
 interface Props { onNavigate: (p: AppPage) => void }
@@ -11,6 +13,7 @@ interface Props { onNavigate: (p: AppPage) => void }
 export function HomePage({ onNavigate }: Props) {
   const { progress } = useStore()
   const { ready } = useWordDatabase()
+  const [showShare, setShowShare] = useState(false)
 
   if (!progress) return null
 
@@ -89,9 +92,35 @@ export function HomePage({ onNavigate }: Props) {
         >
           {ready ? '오늘 공부 시작하기' : '단어 불러오는 중...'}
         </button>
+
+        <button
+          onClick={() => setShowShare(true)}
+          style={{
+            background: 'linear-gradient(135deg, #6B4FBB, #9B6FDB)',
+            color: 'white',
+            border: 'none',
+            borderRadius: 12,
+            padding: '14px 24px',
+            fontSize: 15,
+            fontWeight: 700,
+            width: '100%',
+            cursor: 'pointer',
+            marginTop: 12,
+            fontFamily: 'Paperlogy, sans-serif',
+          }}
+        >
+          마구 마구 자랑하기 🎌
+        </button>
       </div>
 
       <TabBar current="home" onNavigate={onNavigate} />
+
+      {showShare && (
+        <ShareModal
+          progress={progress}
+          onClose={() => setShowShare(false)}
+        />
+      )}
     </div>
   )
 }

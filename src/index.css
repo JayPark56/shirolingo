@@ -1,3 +1,13 @@
+@font-face { font-family: 'Paperlogy'; src: url('/fonts/Paperlogy-1Thin.ttf') format('truetype'); font-weight: 100; font-display: swap; }
+@font-face { font-family: 'Paperlogy'; src: url('/fonts/Paperlogy-2ExtraLight.ttf') format('truetype'); font-weight: 200; font-display: swap; }
+@font-face { font-family: 'Paperlogy'; src: url('/fonts/Paperlogy-3Light.ttf') format('truetype'); font-weight: 300; font-display: swap; }
+@font-face { font-family: 'Paperlogy'; src: url('/fonts/Paperlogy-4Regular.ttf') format('truetype'); font-weight: 400; font-display: swap; }
+@font-face { font-family: 'Paperlogy'; src: url('/fonts/Paperlogy-5Medium.ttf') format('truetype'); font-weight: 500; font-display: swap; }
+@font-face { font-family: 'Paperlogy'; src: url('/fonts/Paperlogy-6SemiBold.ttf') format('truetype'); font-weight: 600; font-display: swap; }
+@font-face { font-family: 'Paperlogy'; src: url('/fonts/Paperlogy-7Bold.ttf') format('truetype'); font-weight: 700; font-display: swap; }
+@font-face { font-family: 'Paperlogy'; src: url('/fonts/Paperlogy-8ExtraBold.ttf') format('truetype'); font-weight: 800; font-display: swap; }
+@font-face { font-family: 'Paperlogy'; src: url('/fonts/Paperlogy-9Black.ttf') format('truetype'); font-weight: 900; font-display: swap; }
+
 :root {
   --bg: #0D0D0D;
   --card-bg: #1A1A2E;
@@ -19,7 +29,7 @@
 body {
   background: var(--bg);
   color: var(--text-primary);
-  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Paperlogy', -apple-system, BlinkMacSystemFont, sans-serif;
   min-height: 100vh;
   max-width: 430px;
   margin: 0 auto;
