@@ -1,0 +1,5756 @@
+{
+  "level": "n5",
+  "words": [
+    {
+      "id": "n5-001",
+      "kanji": "学校",
+      "reading": "がっこう",
+      "meaning": "school",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-002",
+      "kanji": "川",
+      "reading": "かわ",
+      "meaning": "river",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-003",
+      "kanji": "手",
+      "reading": "て",
+      "meaning": "hand",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-004",
+      "kanji": "戸",
+      "reading": "と",
+      "meaning": "door (esp. Japanese-style)",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-005",
+      "kanji": null,
+      "reading": "メガネ",
+      "meaning": "glasses",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-006",
+      "kanji": "煙草",
+      "reading": "タバコ",
+      "meaning": "tobacco",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-007",
+      "kanji": "赤",
+      "reading": "あか",
+      "meaning": "red",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-008",
+      "kanji": "仕事",
+      "reading": "しごと",
+      "meaning": "work",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-009",
+      "kanji": "英語",
+      "reading": "えいご",
+      "meaning": "English (language)",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-010",
+      "kanji": "問題",
+      "reading": "もんだい",
+      "meaning": "question (e.g. on a test)",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-011",
+      "kanji": "部屋",
+      "reading": "へや",
+      "meaning": "room",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-012",
+      "kanji": "子供",
+      "reading": "こども",
+      "meaning": "child",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-013",
+      "kanji": "時間",
+      "reading": "じかん",
+      "meaning": "time",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-014",
+      "kanji": "雨",
+      "reading": "あめ",
+      "meaning": "rain",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-015",
+      "kanji": "先生",
+      "reading": "せんせい",
+      "meaning": "teacher",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-016",
+      "kanji": "年",
+      "reading": "とし",
+      "meaning": "year",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-017",
+      "kanji": "手紙",
+      "reading": "てがみ",
+      "meaning": "letter",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-018",
+      "kanji": "電話",
+      "reading": "でんわ",
+      "meaning": "telephone call",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-019",
+      "kanji": "水",
+      "reading": "みず",
+      "meaning": "water (esp. cool or cold)",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-020",
+      "kanji": "病気",
+      "reading": "びょうき",
+      "meaning": "illness (usu. excluding minor ailments, e.g. common cold)",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-021",
+      "kanji": "会社",
+      "reading": "かいしゃ",
+      "meaning": "company",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-022",
+      "kanji": "結婚",
+      "reading": "けっこん",
+      "meaning": "marriage",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-023",
+      "kanji": "言葉",
+      "reading": "ことば",
+      "meaning": "language",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-024",
+      "kanji": "目",
+      "reading": "め",
+      "meaning": "eye",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-025",
+      "kanji": "走る",
+      "reading": "はしる",
+      "meaning": "to run",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-026",
+      "kanji": "名前",
+      "reading": "なまえ",
+      "meaning": "name",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-027",
+      "kanji": "旅行",
+      "reading": "りょこう",
+      "meaning": "travel",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-028",
+      "kanji": "道",
+      "reading": "みち",
+      "meaning": "road",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-029",
+      "kanji": "飛行機",
+      "reading": "ひこうき",
+      "meaning": "airplane",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-030",
+      "kanji": "映画",
+      "reading": "えいが",
+      "meaning": "movie",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-031",
+      "kanji": "音楽",
+      "reading": "おんがく",
+      "meaning": "music",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-032",
+      "kanji": "木",
+      "reading": "き",
+      "meaning": "tree",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-033",
+      "kanji": "大学",
+      "reading": "だいがく",
+      "meaning": "university",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-034",
+      "kanji": "時計",
+      "reading": "とけい",
+      "meaning": "clock",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-035",
+      "kanji": "家族",
+      "reading": "かぞく",
+      "meaning": "family",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-036",
+      "kanji": "花",
+      "reading": "はな",
+      "meaning": "flower",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-037",
+      "kanji": "猫",
+      "reading": "ねこ",
+      "meaning": "cat (esp. the domestic cat, Felis catus)",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-038",
+      "kanji": "毎日",
+      "reading": "まいにち",
+      "meaning": "every day",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-039",
+      "kanji": "宿題",
+      "reading": "しゅくだい",
+      "meaning": "homework",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-040",
+      "kanji": "雪",
+      "reading": "ゆき",
+      "meaning": "snow",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-041",
+      "kanji": "山",
+      "reading": "やま",
+      "meaning": "mountain",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-042",
+      "kanji": "窓",
+      "reading": "まど",
+      "meaning": "window",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-043",
+      "kanji": "動物",
+      "reading": "どうぶつ",
+      "meaning": "animal",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-044",
+      "kanji": "夜",
+      "reading": "よる",
+      "meaning": "night",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-045",
+      "kanji": "料理",
+      "reading": "りょうり",
+      "meaning": "cooking",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-046",
+      "kanji": "夏",
+      "reading": "なつ",
+      "meaning": "summer",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-047",
+      "kanji": "新聞",
+      "reading": "しんぶん",
+      "meaning": "newspaper",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-048",
+      "kanji": "公園",
+      "reading": "こうえん",
+      "meaning": "(public) park",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-049",
+      "kanji": "意味",
+      "reading": "いみ",
+      "meaning": "meaning",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-050",
+      "kanji": "自転車",
+      "reading": "じてんしゃ",
+      "meaning": "bicycle",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-051",
+      "kanji": "足",
+      "reading": "あし",
+      "meaning": "foot",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-052",
+      "kanji": "電車",
+      "reading": "でんしゃ",
+      "meaning": "train",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-053",
+      "kanji": "散歩",
+      "reading": "さんぽ",
+      "meaning": "walk",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-054",
+      "kanji": "声",
+      "reading": "こえ",
+      "meaning": "voice",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-055",
+      "kanji": "朝",
+      "reading": "あさ",
+      "meaning": "morning",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-056",
+      "kanji": "歌",
+      "reading": "うた",
+      "meaning": "song",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-057",
+      "kanji": "靴",
+      "reading": "くつ",
+      "meaning": "shoe",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-058",
+      "kanji": "箱",
+      "reading": "はこ",
+      "meaning": "box",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-059",
+      "kanji": "机",
+      "reading": "つくえ",
+      "meaning": "desk",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-060",
+      "kanji": "帽子",
+      "reading": "ぼうし",
+      "meaning": "hat",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-061",
+      "kanji": "海",
+      "reading": "うみ",
+      "meaning": "sea",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-062",
+      "kanji": "授業",
+      "reading": "じゅぎょう",
+      "meaning": "lesson",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-063",
+      "kanji": "銀行",
+      "reading": "ぎんこう",
+      "meaning": "bank",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-064",
+      "kanji": "写真",
+      "reading": "しゃしん",
+      "meaning": "photograph",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-065",
+      "kanji": "冬",
+      "reading": "ふゆ",
+      "meaning": "winter",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-066",
+      "kanji": "村",
+      "reading": "むら",
+      "meaning": "village",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-067",
+      "kanji": "傘",
+      "reading": "かさ",
+      "meaning": "umbrella",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-068",
+      "kanji": "口",
+      "reading": "くち",
+      "meaning": "mouth",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-069",
+      "kanji": "橋",
+      "reading": "はし",
+      "meaning": "bridge",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-070",
+      "kanji": "病院",
+      "reading": "びょういん",
+      "meaning": "hospital",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-071",
+      "kanji": "図書館",
+      "reading": "としょかん",
+      "meaning": "library",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-072",
+      "kanji": "春",
+      "reading": "はる",
+      "meaning": "spring",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-073",
+      "kanji": "買い物",
+      "reading": "かいもの",
+      "meaning": "shopping",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-074",
+      "kanji": "椅子",
+      "reading": "いす",
+      "meaning": "chair",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-075",
+      "kanji": "自動車",
+      "reading": "じどうしゃ",
+      "meaning": "car",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-076",
+      "kanji": "色",
+      "reading": "いろ",
+      "meaning": "colour",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-077",
+      "kanji": "卵",
+      "reading": "たまご",
+      "meaning": "eggs",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-078",
+      "kanji": "肉",
+      "reading": "にく",
+      "meaning": "flesh",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-079",
+      "kanji": "風邪",
+      "reading": "かぜ",
+      "meaning": "(common) cold",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-080",
+      "kanji": "掃除",
+      "reading": "そうじ",
+      "meaning": "cleaning",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-081",
+      "kanji": "紙",
+      "reading": "かみ",
+      "meaning": "paper",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-082",
+      "kanji": "鍵",
+      "reading": "かぎ",
+      "meaning": "key",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-083",
+      "kanji": "雑誌",
+      "reading": "ざっし",
+      "meaning": "magazine",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-084",
+      "kanji": "切符",
+      "reading": "きっぷ",
+      "meaning": "ticket",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-085",
+      "kanji": "外国人",
+      "reading": "がいこくじん",
+      "meaning": "foreigner",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-086",
+      "kanji": "財布",
+      "reading": "さいふ",
+      "meaning": "wallet",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-087",
+      "kanji": "鉛筆",
+      "reading": "えんぴつ",
+      "meaning": "(wooden) pencil",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-088",
+      "kanji": "大人",
+      "reading": "おとな",
+      "meaning": "adult",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-089",
+      "kanji": "塩",
+      "reading": "しお",
+      "meaning": "salt",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-090",
+      "kanji": "地図",
+      "reading": "ちず",
+      "meaning": "map",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-091",
+      "kanji": "砂糖",
+      "reading": "さとう",
+      "meaning": "sugar",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-092",
+      "kanji": "夏休み",
+      "reading": "なつやすみ",
+      "meaning": "summer vacation",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-093",
+      "kanji": "郵便局",
+      "reading": "ゆうびんきょく",
+      "meaning": "post office",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-094",
+      "kanji": "池",
+      "reading": "いけ",
+      "meaning": "pond",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-095",
+      "kanji": "教室",
+      "reading": "きょうしつ",
+      "meaning": "classroom",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-096",
+      "kanji": "耳",
+      "reading": "みみ",
+      "meaning": "ear",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-097",
+      "kanji": "切手",
+      "reading": "きって",
+      "meaning": "stamp (postage)",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-098",
+      "kanji": "台所",
+      "reading": "だいどころ",
+      "meaning": "kitchen",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-099",
+      "kanji": "電気",
+      "reading": "でんき",
+      "meaning": "electricity",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-100",
+      "kanji": "歯",
+      "reading": "は",
+      "meaning": "tooth",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-101",
+      "kanji": "紅茶",
+      "reading": "こうちゃ",
+      "meaning": "black tea",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-102",
+      "kanji": "家庭",
+      "reading": "かてい",
+      "meaning": "home",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-103",
+      "kanji": "野菜",
+      "reading": "やさい",
+      "meaning": "vegetable",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-104",
+      "kanji": "風呂",
+      "reading": "ふろ",
+      "meaning": "bath",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-105",
+      "kanji": "玄関",
+      "reading": "げんかん",
+      "meaning": "entrance",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-106",
+      "kanji": "地下鉄",
+      "reading": "ちかてつ",
+      "meaning": "subway",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-107",
+      "kanji": "緑",
+      "reading": "みどり",
+      "meaning": "green",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-108",
+      "kanji": "昼",
+      "reading": "ひる",
+      "meaning": "noon",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-109",
+      "kanji": "西",
+      "reading": "にし",
+      "meaning": "west",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-110",
+      "kanji": "白",
+      "reading": "しろ",
+      "meaning": "white",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-111",
+      "kanji": "洗濯",
+      "reading": "せんたく",
+      "meaning": "washing",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-112",
+      "kanji": "冷蔵庫",
+      "reading": "れいぞうこ",
+      "meaning": "refrigerator",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-113",
+      "kanji": "南",
+      "reading": "みなみ",
+      "meaning": "south",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-114",
+      "kanji": "火曜日",
+      "reading": "かようび",
+      "meaning": "Tuesday",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-115",
+      "kanji": "北",
+      "reading": "きた",
+      "meaning": "north",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-116",
+      "kanji": "茶色",
+      "reading": "ちゃいろ",
+      "meaning": "brown",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-117",
+      "kanji": "喫茶店",
+      "reading": "きっさてん",
+      "meaning": "coffee shop",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-118",
+      "kanji": "黒",
+      "reading": "くろ",
+      "meaning": "black",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-119",
+      "kanji": "青",
+      "reading": "あお",
+      "meaning": "blue",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-120",
+      "kanji": "靴下",
+      "reading": "くつした",
+      "meaning": "socks",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-121",
+      "kanji": "封筒",
+      "reading": "ふうとう",
+      "meaning": "envelope",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-122",
+      "kanji": "辺",
+      "reading": "へん",
+      "meaning": "area",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-123",
+      "kanji": "黄色",
+      "reading": "きいろ",
+      "meaning": "yellow",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-124",
+      "kanji": "映画館",
+      "reading": "えいがかん",
+      "meaning": "movie theatre",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-125",
+      "kanji": "食堂",
+      "reading": "しょくどう",
+      "meaning": "dining room",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-126",
+      "kanji": "牛肉",
+      "reading": "ぎゅうにく",
+      "meaning": "beef",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-127",
+      "kanji": "交差点",
+      "reading": "こうさてん",
+      "meaning": "crossing",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-128",
+      "kanji": "曇り",
+      "reading": "くもり",
+      "meaning": "cloudiness",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-129",
+      "kanji": "漢字",
+      "reading": "かんじ",
+      "meaning": "kanji",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-130",
+      "kanji": "茶碗",
+      "reading": "ちゃわん",
+      "meaning": "rice bowl",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-131",
+      "kanji": "背広",
+      "reading": "せびろ",
+      "meaning": "business suit",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-132",
+      "kanji": "万年筆",
+      "reading": "まんねんひつ",
+      "meaning": "fountain pen",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-133",
+      "kanji": "灰皿",
+      "reading": "はいざら",
+      "meaning": "ashtray",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-134",
+      "kanji": "大使館",
+      "reading": "たいしかん",
+      "meaning": "embassy",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-135",
+      "kanji": "豚肉",
+      "reading": "ぶたにく",
+      "meaning": "pork",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-136",
+      "kanji": "交番",
+      "reading": "こうばん",
+      "meaning": "police box",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-137",
+      "kanji": "飲む",
+      "reading": "のむ",
+      "meaning": "to drink",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-138",
+      "kanji": "上げる",
+      "reading": "あげる",
+      "meaning": "to raise",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-139",
+      "kanji": "頭",
+      "reading": "あたま",
+      "meaning": "head",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-140",
+      "kanji": "日曜日",
+      "reading": "にちようび",
+      "meaning": "Sunday",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-141",
+      "kanji": "誕生日",
+      "reading": "たんじょうび",
+      "meaning": "birthday",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-142",
+      "kanji": "可愛い",
+      "reading": "かわいい",
+      "meaning": "cute",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-143",
+      "kanji": "鞄",
+      "reading": "かばん",
+      "meaning": "bag",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-144",
+      "kanji": "土曜日",
+      "reading": "どようび",
+      "meaning": "Saturday",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-145",
+      "kanji": "月曜日",
+      "reading": "げつようび",
+      "meaning": "Monday",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-146",
+      "kanji": "金曜日",
+      "reading": "きんようび",
+      "meaning": "Friday",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-147",
+      "kanji": "花瓶",
+      "reading": "かびん",
+      "meaning": "(flower) vase",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-148",
+      "kanji": "木曜日",
+      "reading": "もくようび",
+      "meaning": "Thursday",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-149",
+      "kanji": "本棚",
+      "reading": "ほんだな",
+      "meaning": "bookshelves",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-150",
+      "kanji": "石鹸",
+      "reading": "せっけん",
+      "meaning": "soap",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-151",
+      "kanji": "水曜日",
+      "reading": "すいようび",
+      "meaning": "Wednesday",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-152",
+      "kanji": "八百屋",
+      "reading": "やおや",
+      "meaning": "greengrocer",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-153",
+      "kanji": "成る",
+      "reading": "なる",
+      "meaning": "to become",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-154",
+      "kanji": null,
+      "reading": "より",
+      "meaning": "than",
+      "partOfSpeech": "조사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-155",
+      "kanji": "一番",
+      "reading": "いちばん",
+      "meaning": "number one",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-156",
+      "kanji": "私",
+      "reading": "わたし",
+      "meaning": "I",
+      "partOfSpeech": "대명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-157",
+      "kanji": "外",
+      "reading": "そと",
+      "meaning": "outside",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-158",
+      "kanji": "姉",
+      "reading": "あね",
+      "meaning": "older sister",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-159",
+      "kanji": "百",
+      "reading": "ひゃく",
+      "meaning": "hundred",
+      "partOfSpeech": "기타",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-160",
+      "kanji": "有る",
+      "reading": "ある",
+      "meaning": "to be",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-161",
+      "kanji": "其の",
+      "reading": "その",
+      "meaning": "that",
+      "partOfSpeech": "기타",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-162",
+      "kanji": "言う",
+      "reading": "いう",
+      "meaning": "to say",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-163",
+      "kanji": "出来る",
+      "reading": "できる",
+      "meaning": "to be able to do",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-164",
+      "kanji": "良い",
+      "reading": "よい",
+      "meaning": "good",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-165",
+      "kanji": "下さい",
+      "reading": "ください",
+      "meaning": "please (give me)",
+      "partOfSpeech": "표현",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-166",
+      "kanji": "見る",
+      "reading": "みる",
+      "meaning": "to see",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-167",
+      "kanji": "此の",
+      "reading": "この",
+      "meaning": "this",
+      "partOfSpeech": "기타",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-168",
+      "kanji": "自分",
+      "reading": "じぶん",
+      "meaning": "myself",
+      "partOfSpeech": "대명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-169",
+      "kanji": "知る",
+      "reading": "しる",
+      "meaning": "to know",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-170",
+      "kanji": "持つ",
+      "reading": "もつ",
+      "meaning": "to hold (in one's hand)",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-171",
+      "kanji": "何",
+      "reading": "なに",
+      "meaning": "what",
+      "partOfSpeech": "대명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-172",
+      "kanji": "車",
+      "reading": "くるま",
+      "meaning": "car",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-173",
+      "kanji": "話す",
+      "reading": "はなす",
+      "meaning": "to talk",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-174",
+      "kanji": "今",
+      "reading": "いま",
+      "meaning": "now",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-175",
+      "kanji": "今日",
+      "reading": "きょう",
+      "meaning": "today",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-176",
+      "kanji": "買う",
+      "reading": "かう",
+      "meaning": "to buy",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-177",
+      "kanji": "読む",
+      "reading": "よむ",
+      "meaning": "to read",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-178",
+      "kanji": "皆",
+      "reading": "みな",
+      "meaning": "everyone",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-179",
+      "kanji": "新しい",
+      "reading": "あたらしい",
+      "meaning": "new",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-180",
+      "kanji": "話",
+      "reading": "はなし",
+      "meaning": "talk",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-181",
+      "kanji": "明日",
+      "reading": "あした",
+      "meaning": "tomorrow",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-182",
+      "kanji": "昨日",
+      "reading": "きのう",
+      "meaning": "yesterday",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-183",
+      "kanji": "出る",
+      "reading": "でる",
+      "meaning": "to leave",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-184",
+      "kanji": "勉強",
+      "reading": "べんきょう",
+      "meaning": "study",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-185",
+      "kanji": "取る",
+      "reading": "とる",
+      "meaning": "to take",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-186",
+      "kanji": "誰",
+      "reading": "だれ",
+      "meaning": "who",
+      "partOfSpeech": "대명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-187",
+      "kanji": "お金",
+      "reading": "おかね",
+      "meaning": "money",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-188",
+      "kanji": "男",
+      "reading": "おとこ",
+      "meaning": "man",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-189",
+      "kanji": "犬",
+      "reading": "いぬ",
+      "meaning": "dog (Canis (lupus) familiaris)",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-190",
+      "kanji": "使う",
+      "reading": "つかう",
+      "meaning": "to use (a tool, method, etc.)",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-191",
+      "kanji": "大変",
+      "reading": "たいへん",
+      "meaning": "very",
+      "partOfSpeech": "부사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-192",
+      "kanji": "待つ",
+      "reading": "まつ",
+      "meaning": "to wait",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-193",
+      "kanji": "作る",
+      "reading": "つくる",
+      "meaning": "to make",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-194",
+      "kanji": "後ろ",
+      "reading": "うしろ",
+      "meaning": "back",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-195",
+      "kanji": "町",
+      "reading": "まち",
+      "meaning": "town",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-196",
+      "kanji": "駅",
+      "reading": "えき",
+      "meaning": "railway station",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-197",
+      "kanji": "少し",
+      "reading": "すこし",
+      "meaning": "a little",
+      "partOfSpeech": "부사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-198",
+      "kanji": "貴方",
+      "reading": "あなた",
+      "meaning": "you",
+      "partOfSpeech": "대명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-199",
+      "kanji": "欲しい",
+      "reading": "ほしい",
+      "meaning": "wanting (to have)",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-200",
+      "kanji": "行く",
+      "reading": "いく",
+      "meaning": "to go",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-201",
+      "kanji": "乗る",
+      "reading": "のる",
+      "meaning": "to get on (train, plane, bus, ship, etc.)",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-202",
+      "kanji": "大きな",
+      "reading": "おおきな",
+      "meaning": "big",
+      "partOfSpeech": "기타",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-203",
+      "kanji": "医者",
+      "reading": "いしゃ",
+      "meaning": "doctor",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-204",
+      "kanji": "終わる",
+      "reading": "おわる",
+      "meaning": "to end",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-205",
+      "kanji": "学生",
+      "reading": "がくせい",
+      "meaning": "student (esp. a university student)",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-206",
+      "kanji": "長い",
+      "reading": "ながい",
+      "meaning": "long (distance, length)",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-207",
+      "kanji": "何の",
+      "reading": "どの",
+      "meaning": "which",
+      "partOfSpeech": "기타",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-208",
+      "kanji": "又",
+      "reading": "また",
+      "meaning": "again",
+      "partOfSpeech": "부사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-209",
+      "kanji": "国",
+      "reading": "くに",
+      "meaning": "country",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-210",
+      "kanji": "高い",
+      "reading": "たかい",
+      "meaning": "high",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-211",
+      "kanji": "余り",
+      "reading": "あまり",
+      "meaning": "remainder",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-212",
+      "kanji": "難しい",
+      "reading": "むずかしい",
+      "meaning": "difficult",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-213",
+      "kanji": "友達",
+      "reading": "ともだち",
+      "meaning": "friend",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-214",
+      "kanji": "本当",
+      "reading": "ほんとう",
+      "meaning": "truth",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-215",
+      "kanji": "一つ",
+      "reading": "ひとつ",
+      "meaning": "one",
+      "partOfSpeech": "기타",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-216",
+      "kanji": "寝る",
+      "reading": "ねる",
+      "meaning": "to sleep (lying down)",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-217",
+      "kanji": "生徒",
+      "reading": "せいと",
+      "meaning": "pupil",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-218",
+      "kanji": "忙しい",
+      "reading": "いそがしい",
+      "meaning": "busy",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-219",
+      "kanji": "両親",
+      "reading": "りょうしん",
+      "meaning": "parents",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-220",
+      "kanji": "泳ぐ",
+      "reading": "およぐ",
+      "meaning": "to swim",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-221",
+      "kanji": "立つ",
+      "reading": "たつ",
+      "meaning": "to stand (up)",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-222",
+      "kanji": "出す",
+      "reading": "だす",
+      "meaning": "to take out",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-223",
+      "kanji": "早い",
+      "reading": "はやい",
+      "meaning": "fast",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-224",
+      "kanji": "楽しい",
+      "reading": "たのしい",
+      "meaning": "enjoyable",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-225",
+      "kanji": "面白い",
+      "reading": "おもしろい",
+      "meaning": "interesting",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-226",
+      "kanji": "絵",
+      "reading": "え",
+      "meaning": "picture",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-227",
+      "kanji": "女の子",
+      "reading": "おんなのこ",
+      "meaning": "girl",
+      "partOfSpeech": "표현",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-228",
+      "kanji": "着る",
+      "reading": "きる",
+      "meaning": "to wear (from the shoulders down)",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-229",
+      "kanji": "上手",
+      "reading": "じょうず",
+      "meaning": "skillful",
+      "partOfSpeech": "な형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-230",
+      "kanji": "古い",
+      "reading": "ふるい",
+      "meaning": "old",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-231",
+      "kanji": "強い",
+      "reading": "つよい",
+      "meaning": "strong",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-232",
+      "kanji": "全部",
+      "reading": "ぜんぶ",
+      "meaning": "all",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-233",
+      "kanji": "呼ぶ",
+      "reading": "よぶ",
+      "meaning": "to call out (to)",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-234",
+      "kanji": "午後",
+      "reading": "ごご",
+      "meaning": "afternoon",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-235",
+      "kanji": "掛ける",
+      "reading": "かける",
+      "meaning": "to hang up (e.g. a coat, a picture on the wall)",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-236",
+      "kanji": "辞書",
+      "reading": "じしょ",
+      "meaning": "dictionary",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-237",
+      "kanji": "天気",
+      "reading": "てんき",
+      "meaning": "weather",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-238",
+      "kanji": "体",
+      "reading": "からだ",
+      "meaning": "body",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-239",
+      "kanji": "大きい",
+      "reading": "おおきい",
+      "meaning": "big",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-240",
+      "kanji": "質問",
+      "reading": "しつもん",
+      "meaning": "question",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-241",
+      "kanji": "昨夜",
+      "reading": "ゆうべ",
+      "meaning": "last night",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-242",
+      "kanji": "有名",
+      "reading": "ゆうめい",
+      "meaning": "famous",
+      "partOfSpeech": "な형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-243",
+      "kanji": "兄",
+      "reading": "あに",
+      "meaning": "older brother",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-244",
+      "kanji": "歌う",
+      "reading": "うたう",
+      "meaning": "to sing",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-245",
+      "kanji": "上る",
+      "reading": "のぼる",
+      "meaning": "to ascend",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-246",
+      "kanji": "服",
+      "reading": "ふく",
+      "meaning": "clothes (esp. Western clothes)",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-247",
+      "kanji": "鳥",
+      "reading": "とり",
+      "meaning": "bird",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-248",
+      "kanji": "時々",
+      "reading": "ときどき",
+      "meaning": "sometimes",
+      "partOfSpeech": "부사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-249",
+      "kanji": "妹",
+      "reading": "いもうと",
+      "meaning": "younger sister",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-250",
+      "kanji": "二つ",
+      "reading": "ふたつ",
+      "meaning": "two",
+      "partOfSpeech": "기타",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-251",
+      "kanji": "頼む",
+      "reading": "たのむ",
+      "meaning": "to request",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-252",
+      "kanji": "お父さん",
+      "reading": "おとうさん",
+      "meaning": "father",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-253",
+      "kanji": "今朝",
+      "reading": "けさ",
+      "meaning": "this morning",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-254",
+      "kanji": "遅い",
+      "reading": "おそい",
+      "meaning": "slow",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-255",
+      "kanji": "借りる",
+      "reading": "かりる",
+      "meaning": "to borrow",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-256",
+      "kanji": "薬",
+      "reading": "くすり",
+      "meaning": "medicine",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-257",
+      "kanji": "庭",
+      "reading": "にわ",
+      "meaning": "garden",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-258",
+      "kanji": "外国",
+      "reading": "がいこく",
+      "meaning": "foreign country",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-259",
+      "kanji": "元気",
+      "reading": "げんき",
+      "meaning": "lively",
+      "partOfSpeech": "な형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-260",
+      "kanji": "小さい",
+      "reading": "ちいさい",
+      "meaning": "small",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-261",
+      "kanji": "弟",
+      "reading": "おとうと",
+      "meaning": "younger brother",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-262",
+      "kanji": "今年",
+      "reading": "ことし",
+      "meaning": "this year",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-263",
+      "kanji": "魚",
+      "reading": "さかな",
+      "meaning": "fish",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-264",
+      "kanji": "お母さん",
+      "reading": "おかあさん",
+      "meaning": "mother",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-265",
+      "kanji": "男の子",
+      "reading": "おとこのこ",
+      "meaning": "boy",
+      "partOfSpeech": "표현",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-266",
+      "kanji": "飛ぶ",
+      "reading": "とぶ",
+      "meaning": "to fly",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-267",
+      "kanji": "売る",
+      "reading": "うる",
+      "meaning": "to sell",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-268",
+      "kanji": "静か",
+      "reading": "しずか",
+      "meaning": "quiet",
+      "partOfSpeech": "な형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-269",
+      "kanji": "休む",
+      "reading": "やすむ",
+      "meaning": "to be absent",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-270",
+      "kanji": "食べ物",
+      "reading": "たべもの",
+      "meaning": "food",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-271",
+      "kanji": "大切",
+      "reading": "たいせつ",
+      "meaning": "important",
+      "partOfSpeech": "な형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-272",
+      "kanji": "来週",
+      "reading": "らいしゅう",
+      "meaning": "next week",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-273",
+      "kanji": "警官",
+      "reading": "けいかん",
+      "meaning": "police officer",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-274",
+      "kanji": "建物",
+      "reading": "たてもの",
+      "meaning": "building",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-275",
+      "kanji": "暖かい",
+      "reading": "あたたかい",
+      "meaning": "warm",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-276",
+      "kanji": "降りる",
+      "reading": "おりる",
+      "meaning": "to descend (e.g. a mountain)",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-277",
+      "kanji": "止まる",
+      "reading": "とまる",
+      "meaning": "to stop (moving)",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-278",
+      "kanji": "一緒",
+      "reading": "いっしょ",
+      "meaning": "(doing) together",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-279",
+      "kanji": "先週",
+      "reading": "せんしゅう",
+      "meaning": "last week",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-280",
+      "kanji": "白い",
+      "reading": "しろい",
+      "meaning": "white",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-281",
+      "kanji": "少ない",
+      "reading": "すくない",
+      "meaning": "few",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-282",
+      "kanji": "二",
+      "reading": "に",
+      "meaning": "two",
+      "partOfSpeech": "기타",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-283",
+      "kanji": "赤い",
+      "reading": "あかい",
+      "meaning": "red",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-284",
+      "kanji": "洗う",
+      "reading": "あらう",
+      "meaning": "to wash",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-285",
+      "kanji": "嫌い",
+      "reading": "きらい",
+      "meaning": "disliked",
+      "partOfSpeech": "な형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-286",
+      "kanji": "立派",
+      "reading": "りっぱ",
+      "meaning": "splendid",
+      "partOfSpeech": "な형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-287",
+      "kanji": "暇",
+      "reading": "ひま",
+      "meaning": "spare time",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-288",
+      "kanji": "お茶",
+      "reading": "おちゃ",
+      "meaning": "tea (esp. green or barley)",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-289",
+      "kanji": "広い",
+      "reading": "ひろい",
+      "meaning": "spacious",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-290",
+      "kanji": "去年",
+      "reading": "きょねん",
+      "meaning": "last year",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-291",
+      "kanji": "隣",
+      "reading": "となり",
+      "meaning": "next (to)",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-292",
+      "kanji": "大好き",
+      "reading": "だいすき",
+      "meaning": "liking very much",
+      "partOfSpeech": "な형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-293",
+      "kanji": "女",
+      "reading": "おんな",
+      "meaning": "woman",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-294",
+      "kanji": "多分",
+      "reading": "たぶん",
+      "meaning": "probably",
+      "partOfSpeech": "부사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-295",
+      "kanji": "嫌",
+      "reading": "いや",
+      "meaning": "disliking",
+      "partOfSpeech": "な형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-296",
+      "kanji": "毎朝",
+      "reading": "まいあさ",
+      "meaning": "every morning",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-297",
+      "kanji": "荷物",
+      "reading": "にもつ",
+      "meaning": "luggage",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-298",
+      "kanji": "番号",
+      "reading": "ばんごう",
+      "meaning": "number",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-299",
+      "kanji": "返す",
+      "reading": "かえす",
+      "meaning": "to return (something)",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-300",
+      "kanji": "来年",
+      "reading": "らいねん",
+      "meaning": "next year",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-301",
+      "kanji": "明るい",
+      "reading": "あかるい",
+      "meaning": "light",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-302",
+      "kanji": "近い",
+      "reading": "ちかい",
+      "meaning": "near",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-303",
+      "kanji": "向こう",
+      "reading": "むこう",
+      "meaning": "opposite side",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-304",
+      "kanji": "始め",
+      "reading": "はじめ",
+      "meaning": "beginning",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-305",
+      "kanji": "痛い",
+      "reading": "いたい",
+      "meaning": "painful",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-306",
+      "kanji": "秋",
+      "reading": "あき",
+      "meaning": "autumn",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-307",
+      "kanji": "休み",
+      "reading": "やすみ",
+      "meaning": "rest",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-308",
+      "kanji": "練習",
+      "reading": "れんしゅう",
+      "meaning": "practice",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-309",
+      "kanji": "十",
+      "reading": "じゅう",
+      "meaning": "ten",
+      "partOfSpeech": "기타",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-310",
+      "kanji": "上着",
+      "reading": "うわぎ",
+      "meaning": "coat",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-311",
+      "kanji": "先月",
+      "reading": "せんげつ",
+      "meaning": "last month",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-312",
+      "kanji": "結構",
+      "reading": "けっこう",
+      "meaning": "splendid",
+      "partOfSpeech": "な형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-313",
+      "kanji": "兄弟",
+      "reading": "きょうだい",
+      "meaning": "brothers and sisters",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-314",
+      "kanji": "毎年",
+      "reading": "まいとし",
+      "meaning": "every year",
+      "partOfSpeech": "부사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-315",
+      "kanji": "来月",
+      "reading": "らいげつ",
+      "meaning": "next month",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-316",
+      "kanji": "五",
+      "reading": "ご",
+      "meaning": "five",
+      "partOfSpeech": "기타",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-317",
+      "kanji": "飲み物",
+      "reading": "のみもの",
+      "meaning": "drink",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-318",
+      "kanji": "牛乳",
+      "reading": "ぎゅうにゅう",
+      "meaning": "(cow's) milk",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-319",
+      "kanji": "弱い",
+      "reading": "よわい",
+      "meaning": "weak",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-320",
+      "kanji": "三",
+      "reading": "さん",
+      "meaning": "three",
+      "partOfSpeech": "기타",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-321",
+      "kanji": "大丈夫",
+      "reading": "だいじょうぶ",
+      "meaning": "safe",
+      "partOfSpeech": "な형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-322",
+      "kanji": "黒い",
+      "reading": "くろい",
+      "meaning": "black",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-323",
+      "kanji": "半分",
+      "reading": "はんぶん",
+      "meaning": "half",
+      "partOfSpeech": "부사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-324",
+      "kanji": "皆さん",
+      "reading": "みなさん",
+      "meaning": "all",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-325",
+      "kanji": "押す",
+      "reading": "おす",
+      "meaning": "to push",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-326",
+      "kanji": "勤める",
+      "reading": "つとめる",
+      "meaning": "to work (for)",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-327",
+      "kanji": "熱い",
+      "reading": "あつい",
+      "meaning": "hot (to the touch)",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-328",
+      "kanji": "三つ",
+      "reading": "みっつ",
+      "meaning": "three",
+      "partOfSpeech": "기타",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-329",
+      "kanji": "果物",
+      "reading": "くだもの",
+      "meaning": "fruit",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-330",
+      "kanji": "今週",
+      "reading": "こんしゅう",
+      "meaning": "this week",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-331",
+      "kanji": "甘い",
+      "reading": "あまい",
+      "meaning": "sweet-tasting",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-332",
+      "kanji": "右",
+      "reading": "みぎ",
+      "meaning": "right",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-333",
+      "kanji": "晩",
+      "reading": "ばん",
+      "meaning": "evening",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-334",
+      "kanji": "階段",
+      "reading": "かいだん",
+      "meaning": "stairs",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-335",
+      "kanji": "大勢",
+      "reading": "おおぜい",
+      "meaning": "crowd of people",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-336",
+      "kanji": "夕方",
+      "reading": "ゆうがた",
+      "meaning": "early evening (usu. from 3pm to 6pm)",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-337",
+      "kanji": "低い",
+      "reading": "ひくい",
+      "meaning": "low (rank, degree, value, content, quality, etc.)",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-338",
+      "kanji": "左",
+      "reading": "ひだり",
+      "meaning": "left",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-339",
+      "kanji": "毎週",
+      "reading": "まいしゅう",
+      "meaning": "every week",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-340",
+      "kanji": "下手",
+      "reading": "へた",
+      "meaning": "unskillful",
+      "partOfSpeech": "な형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-341",
+      "kanji": "千",
+      "reading": "せん",
+      "meaning": "thousand",
+      "partOfSpeech": "기타",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-342",
+      "kanji": "渡す",
+      "reading": "わたす",
+      "meaning": "to ferry across (e.g. a river)",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-343",
+      "kanji": "午前",
+      "reading": "ごぜん",
+      "meaning": "morning",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-344",
+      "kanji": "便利",
+      "reading": "べんり",
+      "meaning": "convenient",
+      "partOfSpeech": "な형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-345",
+      "kanji": "丸い",
+      "reading": "まるい",
+      "meaning": "round",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-346",
+      "kanji": "今月",
+      "reading": "こんげつ",
+      "meaning": "this month",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-347",
+      "kanji": "浴びる",
+      "reading": "あびる",
+      "meaning": "to dash over oneself (e.g. water)",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-348",
+      "kanji": "半",
+      "reading": "はん",
+      "meaning": "half",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-349",
+      "kanji": "洋服",
+      "reading": "ようふく",
+      "meaning": "Western-style clothes (cf. traditional Japanese clothes)",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-350",
+      "kanji": "締める",
+      "reading": "しめる",
+      "meaning": "to tie",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-351",
+      "kanji": "文章",
+      "reading": "ぶんしょう",
+      "meaning": "writing",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-352",
+      "kanji": "薄い",
+      "reading": "うすい",
+      "meaning": "thin (of an object)",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-353",
+      "kanji": "八",
+      "reading": "はち",
+      "meaning": "eight",
+      "partOfSpeech": "기타",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-354",
+      "kanji": "横",
+      "reading": "よこ",
+      "meaning": "horizontal (as opposed to vertical)",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-355",
+      "kanji": "四つ",
+      "reading": "よっつ",
+      "meaning": "four",
+      "partOfSpeech": "기타",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-356",
+      "kanji": "六",
+      "reading": "ろく",
+      "meaning": "six",
+      "partOfSpeech": "기타",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-357",
+      "kanji": "丈夫",
+      "reading": "じょうぶ",
+      "meaning": "healthy",
+      "partOfSpeech": "な형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-358",
+      "kanji": "毎晩",
+      "reading": "まいばん",
+      "meaning": "every night",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-359",
+      "kanji": "東",
+      "reading": "ひがし",
+      "meaning": "east",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-360",
+      "kanji": "晴れ",
+      "reading": "はれ",
+      "meaning": "clear weather",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-361",
+      "kanji": "五つ",
+      "reading": "いつつ",
+      "meaning": "five",
+      "partOfSpeech": "기타",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-362",
+      "kanji": "細い",
+      "reading": "ほそい",
+      "meaning": "thin",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-363",
+      "kanji": "廊下",
+      "reading": "ろうか",
+      "meaning": "corridor",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-364",
+      "kanji": "太い",
+      "reading": "ふとい",
+      "meaning": "fat",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-365",
+      "kanji": "縦",
+      "reading": "たて",
+      "meaning": "the vertical",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-366",
+      "kanji": "留学生",
+      "reading": "りゅうがくせい",
+      "meaning": "overseas student",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-367",
+      "kanji": "九つ",
+      "reading": "ここのつ",
+      "meaning": "nine",
+      "partOfSpeech": "기타",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-368",
+      "kanji": "七つ",
+      "reading": "ななつ",
+      "meaning": "seven",
+      "partOfSpeech": "기타",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-369",
+      "kanji": "一昨年",
+      "reading": "おととし",
+      "meaning": "year before last",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-370",
+      "kanji": "人",
+      "reading": "ひと",
+      "meaning": "person",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-371",
+      "kanji": "居る",
+      "reading": "いる",
+      "meaning": "to be (of animate objects)",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-372",
+      "kanji": "其れ",
+      "reading": "それ",
+      "meaning": "that",
+      "partOfSpeech": "대명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-373",
+      "kanji": "物",
+      "reading": "もの",
+      "meaning": "thing",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-374",
+      "kanji": "家",
+      "reading": "いえ",
+      "meaning": "house",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-375",
+      "kanji": "本",
+      "reading": "ほん",
+      "meaning": "book",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-376",
+      "kanji": "迚も",
+      "reading": "とても",
+      "meaning": "very",
+      "partOfSpeech": "부사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-377",
+      "kanji": "会う",
+      "reading": "あう",
+      "meaning": "to meet",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-378",
+      "kanji": "好き",
+      "reading": "すき",
+      "meaning": "liking",
+      "partOfSpeech": "な형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-379",
+      "kanji": "分かる",
+      "reading": "わかる",
+      "meaning": "to understand",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-380",
+      "kanji": "此れ",
+      "reading": "これ",
+      "meaning": "this",
+      "partOfSpeech": "대명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-381",
+      "kanji": "聞く",
+      "reading": "きく",
+      "meaning": "to hear",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-382",
+      "kanji": "所",
+      "reading": "ところ",
+      "meaning": "place",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-383",
+      "kanji": "先",
+      "reading": "さき",
+      "meaning": "point",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-384",
+      "kanji": "何時も",
+      "reading": "いつも",
+      "meaning": "always",
+      "partOfSpeech": "부사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-385",
+      "kanji": "書く",
+      "reading": "かく",
+      "meaning": "to write",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-386",
+      "kanji": "沢山",
+      "reading": "たくさん",
+      "meaning": "a lot",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-387",
+      "kanji": "入る",
+      "reading": "はいる",
+      "meaning": "to enter",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-388",
+      "kanji": "置く",
+      "reading": "おく",
+      "meaning": "to put",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-389",
+      "kanji": "何処",
+      "reading": "どこ",
+      "meaning": "where",
+      "partOfSpeech": "대명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-390",
+      "kanji": "住む",
+      "reading": "すむ",
+      "meaning": "to live (of humans)",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-391",
+      "kanji": "食べる",
+      "reading": "たべる",
+      "meaning": "to eat",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-392",
+      "kanji": "歩く",
+      "reading": "あるく",
+      "meaning": "to walk",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-393",
+      "kanji": "働く",
+      "reading": "はたらく",
+      "meaning": "to work",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-394",
+      "kanji": "着く",
+      "reading": "つく",
+      "meaning": "to arrive at",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-395",
+      "kanji": "上",
+      "reading": "うえ",
+      "meaning": "above",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-396",
+      "kanji": "悪い",
+      "reading": "わるい",
+      "meaning": "bad",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-397",
+      "kanji": "教える",
+      "reading": "おしえる",
+      "meaning": "to teach",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-398",
+      "kanji": "降る",
+      "reading": "ふる",
+      "meaning": "to fall (of rain, snow, ash, etc.)",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-399",
+      "kanji": "死ぬ",
+      "reading": "しぬ",
+      "meaning": "to die",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-400",
+      "kanji": "帰る",
+      "reading": "かえる",
+      "meaning": "to return",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-401",
+      "kanji": "多い",
+      "reading": "おおい",
+      "meaning": "many",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-402",
+      "kanji": "出かける",
+      "reading": "でかける",
+      "meaning": "to go out (e.g. on an excursion or outing)",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-403",
+      "kanji": "若い",
+      "reading": "わかい",
+      "meaning": "young",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-404",
+      "kanji": "掛かる",
+      "reading": "かかる",
+      "meaning": "to take (a resource, e.g. time or money)",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-405",
+      "kanji": "同じ",
+      "reading": "おなじ",
+      "meaning": "same",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-406",
+      "kanji": "起きる",
+      "reading": "おきる",
+      "meaning": "to get up",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-407",
+      "kanji": "座る",
+      "reading": "すわる",
+      "meaning": "to sit (down)",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-408",
+      "kanji": "店",
+      "reading": "みせ",
+      "meaning": "store",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-409",
+      "kanji": "入れる",
+      "reading": "いれる",
+      "meaning": "to put in",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-410",
+      "kanji": "何方",
+      "reading": "どなた",
+      "meaning": "who",
+      "partOfSpeech": "대명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-411",
+      "kanji": "一寸",
+      "reading": "ちょっと",
+      "meaning": "a little",
+      "partOfSpeech": "부사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-412",
+      "kanji": "疲れる",
+      "reading": "つかれる",
+      "meaning": "to get tired",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-413",
+      "kanji": "開ける",
+      "reading": "あける",
+      "meaning": "to open (a door, etc.)",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-414",
+      "kanji": "何故",
+      "reading": "なぜ",
+      "meaning": "why",
+      "partOfSpeech": "부사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-415",
+      "kanji": "一日",
+      "reading": "いちにち",
+      "meaning": "one day",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-416",
+      "kanji": "寒い",
+      "reading": "さむい",
+      "meaning": "cold (e.g. weather)",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-417",
+      "kanji": "見せる",
+      "reading": "みせる",
+      "meaning": "to show",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-418",
+      "kanji": "違う",
+      "reading": "ちがう",
+      "meaning": "to differ (from)",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-419",
+      "kanji": "如何して",
+      "reading": "どうして",
+      "meaning": "how",
+      "partOfSpeech": "부사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-420",
+      "kanji": "付ける",
+      "reading": "つける",
+      "meaning": "to attach",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-421",
+      "kanji": "覚える",
+      "reading": "おぼえる",
+      "meaning": "to memorize",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-422",
+      "kanji": "近く",
+      "reading": "ちかく",
+      "meaning": "near",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-423",
+      "kanji": "困る",
+      "reading": "こまる",
+      "meaning": "to be troubled",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-424",
+      "kanji": "生まれる",
+      "reading": "うまれる",
+      "meaning": "to be born",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-425",
+      "kanji": "丁度",
+      "reading": "ちょうど",
+      "meaning": "exactly",
+      "partOfSpeech": "부사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-426",
+      "kanji": "初めて",
+      "reading": "はじめて",
+      "meaning": "for the first time",
+      "partOfSpeech": "부사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-427",
+      "kanji": "始まる",
+      "reading": "はじまる",
+      "meaning": "to begin",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-428",
+      "kanji": "貸す",
+      "reading": "かす",
+      "meaning": "to lend",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-429",
+      "kanji": "綺麗",
+      "reading": "きれい",
+      "meaning": "pretty",
+      "partOfSpeech": "な형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-430",
+      "kanji": "幾ら",
+      "reading": "いくら",
+      "meaning": "how much",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-431",
+      "kanji": "空",
+      "reading": "そら",
+      "meaning": "sky",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-432",
+      "kanji": "弾く",
+      "reading": "ひく",
+      "meaning": "to play (a stringed or keyboard instrument)",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-433",
+      "kanji": "遊ぶ",
+      "reading": "あそぶ",
+      "meaning": "to play (games, sports)",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-434",
+      "kanji": "然し",
+      "reading": "しかし",
+      "meaning": "however",
+      "partOfSpeech": "접속사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-435",
+      "kanji": "無くす",
+      "reading": "なくす",
+      "meaning": "to lose (something)",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-436",
+      "kanji": "色々",
+      "reading": "いろいろ",
+      "meaning": "various",
+      "partOfSpeech": "な형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-437",
+      "kanji": "渡る",
+      "reading": "わたる",
+      "meaning": "to cross over",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-438",
+      "kanji": "暗い",
+      "reading": "くらい",
+      "meaning": "dark",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-439",
+      "kanji": "此方",
+      "reading": "こちら",
+      "meaning": "this way",
+      "partOfSpeech": "대명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-440",
+      "kanji": "重い",
+      "reading": "おもい",
+      "meaning": "heavy",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-441",
+      "kanji": "今晩",
+      "reading": "こんばん",
+      "meaning": "tonight",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-442",
+      "kanji": "美味しい",
+      "reading": "おいしい",
+      "meaning": "good(-tasting)",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-443",
+      "kanji": "消す",
+      "reading": "けす",
+      "meaning": "to erase",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-444",
+      "kanji": "易しい",
+      "reading": "やさしい",
+      "meaning": "easy",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-445",
+      "kanji": "安い",
+      "reading": "やすい",
+      "meaning": "cheap",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-446",
+      "kanji": "遠い",
+      "reading": "とおい",
+      "meaning": "far",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-447",
+      "kanji": "短い",
+      "reading": "みじかい",
+      "meaning": "short",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-448",
+      "kanji": "消える",
+      "reading": "きえる",
+      "meaning": "to disappear",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-449",
+      "kanji": "曲がる",
+      "reading": "まがる",
+      "meaning": "to bend",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-450",
+      "kanji": "冷たい",
+      "reading": "つめたい",
+      "meaning": "cold (to the touch)",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-451",
+      "kanji": "青い",
+      "reading": "あおい",
+      "meaning": "blue",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-452",
+      "kanji": "頁",
+      "reading": "ページ",
+      "meaning": "page",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-453",
+      "kanji": "奥さん",
+      "reading": "おくさん",
+      "meaning": "wife",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-454",
+      "kanji": "段々",
+      "reading": "だんだん",
+      "meaning": "gradually",
+      "partOfSpeech": "부사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-455",
+      "kanji": "習う",
+      "reading": "ならう",
+      "meaning": "to take lessons in",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-456",
+      "kanji": "彼処",
+      "reading": "あそこ",
+      "meaning": "there",
+      "partOfSpeech": "대명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-457",
+      "kanji": "狭い",
+      "reading": "せまい",
+      "meaning": "narrow",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-458",
+      "kanji": "軽い",
+      "reading": "かるい",
+      "meaning": "light (i.e. not heavy)",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-459",
+      "kanji": "脱ぐ",
+      "reading": "ぬぐ",
+      "meaning": "to take off (clothes, shoes, etc.)",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-460",
+      "kanji": "万",
+      "reading": "まん",
+      "meaning": "10,000",
+      "partOfSpeech": "기타",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-461",
+      "kanji": "並ぶ",
+      "reading": "ならぶ",
+      "meaning": "to line up",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-462",
+      "kanji": "煩い",
+      "reading": "うるさい",
+      "meaning": "noisy",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-463",
+      "kanji": "吸う",
+      "reading": "すう",
+      "meaning": "to breathe in",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-464",
+      "kanji": "閉まる",
+      "reading": "しまる",
+      "meaning": "to be shut",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-465",
+      "kanji": "詰らない",
+      "reading": "つまらない",
+      "meaning": "dull",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-466",
+      "kanji": "咲く",
+      "reading": "さく",
+      "meaning": "to bloom",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-467",
+      "kanji": "真っ直ぐ",
+      "reading": "まっすぐ",
+      "meaning": "straight (ahead)",
+      "partOfSpeech": "な형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-468",
+      "kanji": "一",
+      "reading": "いち",
+      "meaning": "one",
+      "partOfSpeech": "기타",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-469",
+      "kanji": "お祖母さん",
+      "reading": "おばあさん",
+      "meaning": "grandmother",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-470",
+      "kanji": "其方",
+      "reading": "そちら",
+      "meaning": "that way",
+      "partOfSpeech": "대명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-471",
+      "kanji": "涼しい",
+      "reading": "すずしい",
+      "meaning": "cool",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-472",
+      "kanji": "お兄さん",
+      "reading": "おにいさん",
+      "meaning": "older brother",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-473",
+      "kanji": "お姉さん",
+      "reading": "おねえさん",
+      "meaning": "older sister",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-474",
+      "kanji": "並べる",
+      "reading": "ならべる",
+      "meaning": "to line up",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-475",
+      "kanji": "汚い",
+      "reading": "きたない",
+      "meaning": "dirty",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-476",
+      "kanji": "危ない",
+      "reading": "あぶない",
+      "meaning": "dangerous",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-477",
+      "kanji": "お腹",
+      "reading": "おなか",
+      "meaning": "belly",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-478",
+      "kanji": "不味い",
+      "reading": "まずい",
+      "meaning": "bad(-tasting)",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-479",
+      "kanji": "曇る",
+      "reading": "くもる",
+      "meaning": "to get cloudy",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-480",
+      "kanji": "ご飯",
+      "reading": "ごはん",
+      "meaning": "cooked rice",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-481",
+      "kanji": "磨く",
+      "reading": "みがく",
+      "meaning": "to polish",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-482",
+      "kanji": "黄色い",
+      "reading": "きいろい",
+      "meaning": "yellow",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-483",
+      "kanji": "お菓子",
+      "reading": "おかし",
+      "meaning": "confections",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-484",
+      "kanji": "賑やか",
+      "reading": "にぎやか",
+      "meaning": "bustling",
+      "partOfSpeech": "な형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-485",
+      "kanji": "鳴く",
+      "reading": "なく",
+      "meaning": "to make sound (of an animal)",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-486",
+      "kanji": "夕飯",
+      "reading": "ゆうはん",
+      "meaning": "evening meal",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-487",
+      "kanji": "葉書",
+      "reading": "はがき",
+      "meaning": "postcard",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-488",
+      "kanji": "Ｙシャツ",
+      "reading": "ワイシャツ",
+      "meaning": "(formal) shirt",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-489",
+      "kanji": "六つ",
+      "reading": "むっつ",
+      "meaning": "six",
+      "partOfSpeech": "기타",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-490",
+      "kanji": "お巡りさん",
+      "reading": "おまわりさん",
+      "meaning": "police officer",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-491",
+      "kanji": "お手洗い",
+      "reading": "おてあらい",
+      "meaning": "toilet",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-492",
+      "kanji": "零",
+      "reading": "れい",
+      "meaning": "zero",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-493",
+      "kanji": "差す",
+      "reading": "さす",
+      "meaning": "to shine",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-494",
+      "kanji": "２０日",
+      "reading": "はつか",
+      "meaning": "20th day of the month",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-495",
+      "kanji": "粁",
+      "reading": "キロメートル",
+      "meaning": "kilometer",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-496",
+      "kanji": "八つ",
+      "reading": "やっつ",
+      "meaning": "eight",
+      "partOfSpeech": "기타",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-497",
+      "kanji": "再来年",
+      "reading": "さらいねん",
+      "meaning": "year after next",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-498",
+      "kanji": "燐寸",
+      "reading": "マッチ",
+      "meaning": "match (for lighting a fire)",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-499",
+      "kanji": "良く",
+      "reading": "よく",
+      "meaning": "nicely",
+      "partOfSpeech": "부사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-500",
+      "kanji": "其処",
+      "reading": "そこ",
+      "meaning": "there (place relatively near listener)",
+      "partOfSpeech": "대명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-501",
+      "kanji": "小さな",
+      "reading": "ちいさな",
+      "meaning": "small",
+      "partOfSpeech": "기타",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-502",
+      "kanji": "答える",
+      "reading": "こたえる",
+      "meaning": "to answer",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-503",
+      "kanji": "もう一度",
+      "reading": "もういちど",
+      "meaning": "once more",
+      "partOfSpeech": "표현",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-504",
+      "kanji": "お風呂",
+      "reading": "おふろ",
+      "meaning": "bath",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-505",
+      "kanji": "背",
+      "reading": "せ",
+      "meaning": "back",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-506",
+      "kanji": "朝ごはん",
+      "reading": "あさごはん",
+      "meaning": "breakfast",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-507",
+      "kanji": "お弁当",
+      "reading": "おべんとう",
+      "meaning": "bento",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-508",
+      "kanji": "晩御飯",
+      "reading": "ばんごはん",
+      "meaning": "dinner",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-509",
+      "kanji": "昼ご飯",
+      "reading": "ひるごはん",
+      "meaning": "lunch",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-510",
+      "kanji": null,
+      "reading": "でも",
+      "meaning": "but",
+      "partOfSpeech": "접속사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-511",
+      "kanji": "等",
+      "reading": "など",
+      "meaning": "et cetera",
+      "partOfSpeech": "조사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-512",
+      "kanji": null,
+      "reading": "クラス",
+      "meaning": "class",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-513",
+      "kanji": null,
+      "reading": "プール",
+      "meaning": "(swimming) pool",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-514",
+      "kanji": "中",
+      "reading": "なか",
+      "meaning": "inside",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-515",
+      "kanji": null,
+      "reading": "テレビ",
+      "meaning": "television",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-516",
+      "kanji": "珈琲",
+      "reading": "コーヒー",
+      "meaning": "coffee",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-517",
+      "kanji": null,
+      "reading": "ホテル",
+      "meaning": "hotel",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-518",
+      "kanji": null,
+      "reading": "ニュース",
+      "meaning": "news",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-519",
+      "kanji": null,
+      "reading": "テーブル",
+      "meaning": "table",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-520",
+      "kanji": null,
+      "reading": "カメラ",
+      "meaning": "camera",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-521",
+      "kanji": null,
+      "reading": "タクシー",
+      "meaning": "taxi",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-522",
+      "kanji": null,
+      "reading": "スポーツ",
+      "meaning": "sport",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-523",
+      "kanji": null,
+      "reading": "ラジオ",
+      "meaning": "radio",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-524",
+      "kanji": null,
+      "reading": "ペン",
+      "meaning": "pen",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-525",
+      "kanji": null,
+      "reading": "レストラン",
+      "meaning": "restaurant (esp. Western-style)",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-526",
+      "kanji": null,
+      "reading": "テスト",
+      "meaning": "test (of ability, knowledge, etc.)",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-527",
+      "kanji": null,
+      "reading": "ベッド",
+      "meaning": "bed",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-528",
+      "kanji": null,
+      "reading": "ナイフ",
+      "meaning": "knife",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-529",
+      "kanji": null,
+      "reading": "シャツ",
+      "meaning": "shirt (undergarment)",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-530",
+      "kanji": null,
+      "reading": "ネクタイ",
+      "meaning": "tie",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-531",
+      "kanji": null,
+      "reading": "ギター",
+      "meaning": "guitar",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-532",
+      "kanji": "米",
+      "reading": "メートル",
+      "meaning": "metre (unit of length)",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-533",
+      "kanji": null,
+      "reading": "セーター",
+      "meaning": "sweater",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-534",
+      "kanji": null,
+      "reading": "アパート",
+      "meaning": "apartment building",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-535",
+      "kanji": null,
+      "reading": "ポケット",
+      "meaning": "pocket",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-536",
+      "kanji": null,
+      "reading": "バター",
+      "meaning": "butter",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-537",
+      "kanji": null,
+      "reading": "キロ",
+      "meaning": "kilo-",
+      "partOfSpeech": "접두사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-538",
+      "kanji": null,
+      "reading": "スカート",
+      "meaning": "skirt",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-539",
+      "kanji": null,
+      "reading": "レコード",
+      "meaning": "(phonograph) record",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-540",
+      "kanji": null,
+      "reading": "エレベーター",
+      "meaning": "elevator",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-541",
+      "kanji": "洋袴",
+      "reading": "ズボン",
+      "meaning": "trousers",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-542",
+      "kanji": null,
+      "reading": "ポスト",
+      "meaning": "postbox",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-543",
+      "kanji": null,
+      "reading": "コピー",
+      "meaning": "copy",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-544",
+      "kanji": null,
+      "reading": "シャワー",
+      "meaning": "shower",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-545",
+      "kanji": null,
+      "reading": "ハンカチ",
+      "meaning": "handkerchief",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-546",
+      "kanji": "一昨日",
+      "reading": "おととい",
+      "meaning": "day before yesterday",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-547",
+      "kanji": null,
+      "reading": "テープ",
+      "meaning": "tape",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-548",
+      "kanji": null,
+      "reading": "ストーブ",
+      "meaning": "(room) heater",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-549",
+      "kanji": null,
+      "reading": "カップ",
+      "meaning": "cup (drinking vessel, measure, brassiere, prize, etc.)",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-550",
+      "kanji": null,
+      "reading": "ボールペン",
+      "meaning": "ball-point pen",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-551",
+      "kanji": null,
+      "reading": "スプーン",
+      "meaning": "spoon",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-552",
+      "kanji": null,
+      "reading": "スリッパ",
+      "meaning": "slipper",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-553",
+      "kanji": "醤油",
+      "reading": "しょうゆ",
+      "meaning": "soy sauce",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-554",
+      "kanji": null,
+      "reading": "はい",
+      "meaning": "yes",
+      "partOfSpeech": "기타",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-555",
+      "kanji": null,
+      "reading": "ペット",
+      "meaning": "pet",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-556",
+      "kanji": null,
+      "reading": "テープレコーダー",
+      "meaning": "tape recorder",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-557",
+      "kanji": "為る",
+      "reading": "する",
+      "meaning": "to do",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-558",
+      "kanji": "彼",
+      "reading": "あれ",
+      "meaning": "that",
+      "partOfSpeech": "대명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-559",
+      "kanji": "１日",
+      "reading": "ついたち",
+      "meaning": "first day of the month",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-560",
+      "kanji": "３日",
+      "reading": "みっか",
+      "meaning": "3rd day of the month",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-561",
+      "kanji": "５日",
+      "reading": "いつか",
+      "meaning": "5th day of the month",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-562",
+      "kanji": "２日",
+      "reading": "ふつか",
+      "meaning": "2nd day of the month",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-563",
+      "kanji": "１０日",
+      "reading": "とおか",
+      "meaning": "10th day of the month",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-564",
+      "kanji": "６日",
+      "reading": "むいか",
+      "meaning": "6th day of the month",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-565",
+      "kanji": "８日",
+      "reading": "ようか",
+      "meaning": "8th day of the month",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-566",
+      "kanji": "９日",
+      "reading": "ここのか",
+      "meaning": "9th day of the month",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-567",
+      "kanji": "来る",
+      "reading": "くる",
+      "meaning": "to come (spatially or temporally)",
+      "partOfSpeech": "기타",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-568",
+      "kanji": "後",
+      "reading": "あと",
+      "meaning": "behind",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-569",
+      "kanji": "一人",
+      "reading": "ひとり",
+      "meaning": "one person",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-570",
+      "kanji": "二人",
+      "reading": "ふたり",
+      "meaning": "two persons",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-571",
+      "kanji": "側",
+      "reading": "そば",
+      "meaning": "(place) near by",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-572",
+      "kanji": "辛い",
+      "reading": "からい",
+      "meaning": "spicy",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-573",
+      "kanji": "門",
+      "reading": "もん",
+      "meaning": "gate",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-574",
+      "kanji": "角",
+      "reading": "かど",
+      "meaning": "corner",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-575",
+      "kanji": "毎月",
+      "reading": "まいつき",
+      "meaning": "every month",
+      "partOfSpeech": "부사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-576",
+      "kanji": "七",
+      "reading": "しち",
+      "meaning": "seven",
+      "partOfSpeech": "기타",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-577",
+      "kanji": "伯母さん",
+      "reading": "おばさん",
+      "meaning": "aunt",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-578",
+      "kanji": "四",
+      "reading": "し",
+      "meaning": "four",
+      "partOfSpeech": "기타",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-579",
+      "kanji": "お酒",
+      "reading": "おさけ",
+      "meaning": "alcohol",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-580",
+      "kanji": "入り口",
+      "reading": "いりぐち",
+      "meaning": "entrance",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-581",
+      "kanji": "出口",
+      "reading": "でぐち",
+      "meaning": "exit",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-582",
+      "kanji": "お皿",
+      "reading": "おさら",
+      "meaning": "plate",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-583",
+      "kanji": "此処",
+      "reading": "ここ",
+      "meaning": "here",
+      "partOfSpeech": "대명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-584",
+      "kanji": "前",
+      "reading": "まえ",
+      "meaning": "in front (of)",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-585",
+      "kanji": null,
+      "reading": "もう",
+      "meaning": "already",
+      "partOfSpeech": "부사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-586",
+      "kanji": "如何",
+      "reading": "どう",
+      "meaning": "how",
+      "partOfSpeech": "부사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-587",
+      "kanji": "方",
+      "reading": "かた",
+      "meaning": "direction",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-588",
+      "kanji": "未だ",
+      "reading": "まだ",
+      "meaning": "still",
+      "partOfSpeech": "부사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-589",
+      "kanji": null,
+      "reading": "もっと",
+      "meaning": "(some) more",
+      "partOfSpeech": "부사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-590",
+      "kanji": "何時",
+      "reading": "いつ",
+      "meaning": "when",
+      "partOfSpeech": "대명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-591",
+      "kanji": null,
+      "reading": "パーティー",
+      "meaning": "party (social gathering)",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-592",
+      "kanji": "他",
+      "reading": "ほか",
+      "meaning": "another place",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-593",
+      "kanji": "次",
+      "reading": "つぎ",
+      "meaning": "next",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-594",
+      "kanji": null,
+      "reading": "ドア",
+      "meaning": "door",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-595",
+      "kanji": "何方",
+      "reading": "どちら",
+      "meaning": "which way",
+      "partOfSpeech": "대명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-596",
+      "kanji": "誰か",
+      "reading": "だれか",
+      "meaning": "someone",
+      "partOfSpeech": "대명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-597",
+      "kanji": "開く",
+      "reading": "あく",
+      "meaning": "to open (e.g. doors)",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-598",
+      "kanji": null,
+      "reading": "どうぞ",
+      "meaning": "please",
+      "partOfSpeech": "부사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-599",
+      "kanji": null,
+      "reading": "こんな",
+      "meaning": "this sort of",
+      "partOfSpeech": "기타",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-600",
+      "kanji": "下",
+      "reading": "した",
+      "meaning": "below",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-601",
+      "kanji": "而して",
+      "reading": "そして",
+      "meaning": "and",
+      "partOfSpeech": "접속사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-602",
+      "kanji": null,
+      "reading": "ゆっくり",
+      "meaning": "slowly",
+      "partOfSpeech": "부사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-603",
+      "kanji": null,
+      "reading": "さあ",
+      "meaning": "come (on)",
+      "partOfSpeech": "기타",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-604",
+      "kanji": null,
+      "reading": "どうも",
+      "meaning": "thank you",
+      "partOfSpeech": "기타",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-605",
+      "kanji": null,
+      "reading": "じゃあ",
+      "meaning": "then",
+      "partOfSpeech": "접속사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-606",
+      "kanji": null,
+      "reading": "それから",
+      "meaning": "and then",
+      "partOfSpeech": "표현",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-607",
+      "kanji": null,
+      "reading": "ええ",
+      "meaning": "yes",
+      "partOfSpeech": "기타",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-608",
+      "kanji": null,
+      "reading": "ノート",
+      "meaning": "notebook",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-609",
+      "kanji": "釦",
+      "reading": "ボタン",
+      "meaning": "button (clothing)",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-610",
+      "kanji": null,
+      "reading": "デパート",
+      "meaning": "department store",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-611",
+      "kanji": null,
+      "reading": "トイレ",
+      "meaning": "toilet",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-612",
+      "kanji": null,
+      "reading": "それでは",
+      "meaning": "well, ...",
+      "partOfSpeech": "접속사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-613",
+      "kanji": "明後日",
+      "reading": "あさって",
+      "meaning": "day after tomorrow",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-614",
+      "kanji": "何れ",
+      "reading": "どれ",
+      "meaning": "which (of three or more)",
+      "partOfSpeech": "대명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-615",
+      "kanji": "２０歳",
+      "reading": "はたち",
+      "meaning": "20 years old",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-616",
+      "kanji": "彼方",
+      "reading": "あちら",
+      "meaning": "that way",
+      "partOfSpeech": "대명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-617",
+      "kanji": null,
+      "reading": "では",
+      "meaning": "then",
+      "partOfSpeech": "접속사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-618",
+      "kanji": null,
+      "reading": "フィルム",
+      "meaning": "film",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-619",
+      "kanji": "温い",
+      "reading": "ぬるい",
+      "meaning": "lukewarm",
+      "partOfSpeech": "형용사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-620",
+      "kanji": null,
+      "reading": "カレンダー",
+      "meaning": "calendar",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-621",
+      "kanji": "４日",
+      "reading": "よっか",
+      "meaning": "4th day of the month",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-622",
+      "kanji": "７日",
+      "reading": "なのか",
+      "meaning": "7th day of the month",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-623",
+      "kanji": "然うして",
+      "reading": "そうして",
+      "meaning": "and",
+      "partOfSpeech": "접속사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-624",
+      "kanji": "瓦",
+      "reading": "グラム",
+      "meaning": "gram",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-625",
+      "kanji": "瓩",
+      "reading": "キログラム",
+      "meaning": "kilogram",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-626",
+      "kanji": "直ぐに",
+      "reading": "すぐに",
+      "meaning": "immediately",
+      "partOfSpeech": "부사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-627",
+      "kanji": "一月",
+      "reading": "ひとつき",
+      "meaning": "one month",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-628",
+      "kanji": null,
+      "reading": "あの",
+      "meaning": "say",
+      "partOfSpeech": "기타",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-629",
+      "kanji": "忘れる",
+      "reading": "わすれる",
+      "meaning": "to forget",
+      "partOfSpeech": "동사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-630",
+      "kanji": null,
+      "reading": "カレー",
+      "meaning": "curry (esp. Japanese curry)",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-631",
+      "kanji": "字引",
+      "reading": "じびき",
+      "meaning": "dictionary",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-632",
+      "kanji": null,
+      "reading": "パン",
+      "meaning": "bread",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-633",
+      "kanji": null,
+      "reading": "バス",
+      "meaning": "bus",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-634",
+      "kanji": null,
+      "reading": "いいえ",
+      "meaning": "no",
+      "partOfSpeech": "기타",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-635",
+      "kanji": "三",
+      "reading": "サン",
+      "meaning": "three",
+      "partOfSpeech": "기타",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-636",
+      "kanji": null,
+      "reading": "コート",
+      "meaning": "coat",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-637",
+      "kanji": "洋杯",
+      "reading": "コップ",
+      "meaning": "glass (drinking vessel)",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-638",
+      "kanji": null,
+      "reading": "フォーク",
+      "meaning": "fork",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    },
+    {
+      "id": "n5-639",
+      "kanji": null,
+      "reading": "ラジカセ",
+      "meaning": "radio-cassette player",
+      "partOfSpeech": "명사",
+      "exampleSentence": null,
+      "exampleMeaning": null
+    }
+  ]
+}
