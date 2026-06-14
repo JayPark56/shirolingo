@@ -27,13 +27,15 @@ export function ShareModal({ progress, onClose }: Props) {
   const streak = progress.currentStreak
   const totalDays = progress.totalDaysCompleted
 
-  const autoMessage = `
-🔥 ${streak}일 연속 학습 중!
-📅 총 ${totalDays}일 공부 완료
-⭐ ${ownedCount}개 캐릭터 보유
-🎮 현재 키우는 캐릭터: ${activeChar?.characterName ?? ''} (${evolutionLabel})
-${activeChar?.seriesName ? `📺 시리즈: ${activeChar.seriesName}` : ''}
-  `.trim()
+  const stats = [
+    { label: '연속 학습', value: `${streak}일` },
+    { label: '총 공부일', value: `${totalDays}일` },
+    { label: '보유 캐릭터', value: `${ownedCount}개` },
+    { label: '현재 캐릭터', value: `${activeChar?.characterName ?? ''} (${evolutionLabel})` },
+    { label: '시리즈', value: activeChar?.seriesName ?? '' },
+  ]
+
+  const autoMessage = stats.map(s => `${s.label}: ${s.value}`).join('\n')
 
   async function handleSend() {
     if (!nickname.trim()) {
@@ -120,10 +122,14 @@ ${activeChar?.seriesName ? `📺 시리즈: ${activeChar.seriesName}` : ''}
               border: '1px solid rgba(255,255,255,0.08)',
             }}>
               <div style={{ fontSize: 11, color: 'var(--text-secondary)',
-                marginBottom: 8, fontWeight: 600 }}>자랑 내용 미리보기</div>
-              <div style={{ fontSize: 13, color: 'var(--text-primary)',
-                lineHeight: 1.8, whiteSpace: 'pre-line' }}>
-                {autoMessage}
+                marginBottom: 12, fontWeight: 600 }}>자랑 내용 미리보기</div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+                {stats.map(({ label, value }) => (
+                  <div key={label} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <span style={{ fontSize: 13, color: 'var(--text-secondary)' }}>{label}</span>
+                    <span style={{ fontSize: 14, fontWeight: 700, color: '#F5A623' }}>{value}</span>
+                  </div>
+                ))}
               </div>
             </div>
 
@@ -158,7 +164,7 @@ ${activeChar?.seriesName ? `📺 시리즈: ${activeChar.seriesName}` : ''}
               disabled={sending}
               style={{ background: 'linear-gradient(135deg, var(--accent), #FF6B9D)' }}
             >
-              {sending ? '전송 중...' : '자랑하기! 🚀'}
+              {sending ? '전송 중...' : '자랑하기!'}
             </button>
           </>
         )}
