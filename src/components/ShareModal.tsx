@@ -106,7 +106,7 @@ ${activeChar?.seriesName ? `📺 시리즈: ${activeChar.seriesName}` : ''}
               alignItems: 'center', marginBottom: 20 }}>
               <h3 style={{ fontSize: 18, fontWeight: 700,
                 color: 'var(--text-primary)' }}>
-                마구 마구 자랑하기 🎌
+                마구 마구 자랑하기
               </h3>
               <button onClick={onClose} style={{ background: 'none',
                 border: 'none', color: 'var(--text-secondary)',

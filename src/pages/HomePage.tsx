@@ -109,7 +109,7 @@ export function HomePage({ onNavigate }: Props) {
             fontFamily: 'Paperlogy, sans-serif',
           }}
         >
-          마구 마구 자랑하기 🎌
+          마구 마구 자랑하기
         </button>
       </div>
 
