@@ -109,6 +109,21 @@ const slides: Slide[] = [
       <svg width="64" height="64" viewBox="0 0 24 24" fill="none"
         stroke="var(--accent)" strokeWidth="1.5"
         strokeLinecap="round" strokeLinejoin="round">
+        <rect x="3" y="4" width="18" height="18" rx="2"/>
+        <line x1="16" y1="2" x2="16" y2="6"/>
+        <line x1="8" y1="2" x2="8" y2="6"/>
+        <line x1="3" y1="10" x2="21" y2="10"/>
+        <path d="M9 16l2 2 4-4"/>
+      </svg>
+    ),
+    title: '하루 한 번이면 충분해요',
+    description: '학습은 하루에 한 번만 할 수 있어요\n매일 꾸준히 하는 게 가장 중요하니까요\n학습을 마친 날엔 복습으로 단어를 다질 수 있어요',
+  },
+  {
+    icon: (
+      <svg width="64" height="64" viewBox="0 0 24 24" fill="none"
+        stroke="var(--accent)" strokeWidth="1.5"
+        strokeLinecap="round" strokeLinejoin="round">
         <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
       </svg>
     ),

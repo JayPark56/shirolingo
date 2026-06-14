@@ -6,6 +6,7 @@ import { ProgressBar } from '../components/ProgressBar'
 import { ALL_CHARACTERS } from '../data/characters'
 import { TabBar } from '../components/TabBar'
 import { ShareModal } from '../components/ShareModal'
+import { isToday, hoursUntilMidnight } from '../utils/dateUtils'
 import type { AppPage } from '../App'
 
 interface Props {
@@ -26,6 +27,10 @@ export function HomePage({ onNavigate, onShowHelp }: Props) {
   const daysInStage = days % 7
   const totalDays = progress.totalDaysCompleted
   const evolutionLabel = activeChar?.evolutionLabels[stage] ?? ''
+
+  const todayDone = isToday(progress.lastStudyDate)
+  const hasStudiedBefore = (progress.studiedWordIds?.length ?? 0) > 0
+  const hoursLeft = hoursUntilMidnight()
 
   return (
     <div className="page">
@@ -102,13 +107,42 @@ export function HomePage({ onNavigate, onShowHelp }: Props) {
         <div style={{ textAlign:'center', fontSize:12,
           color:'var(--text-secondary)', marginBottom:16 }}>총 10단어</div>
 
-        <button
-          className="btn-primary"
-          onClick={() => onNavigate('study')}
-          disabled={!ready}
-        >
-          {ready ? '오늘 공부 시작하기' : '단어 불러오는 중...'}
-        </button>
+        {todayDone ? (
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+            <div style={{
+              textAlign: 'center', padding: '12px 16px',
+              background: 'rgba(76,175,80,0.1)',
+              borderRadius: 12,
+              border: '1px solid rgba(76,175,80,0.2)',
+            }}>
+              <div style={{ fontSize: 13, fontWeight: 700,
+                color: 'var(--success)', marginBottom: 4 }}>
+                오늘 학습 완료
+              </div>
+              <div style={{ fontSize: 12, color: 'var(--text-secondary)' }}>
+                다음 학습까지 {hoursLeft}시간
+              </div>
+            </div>
+
+            {hasStudiedBefore && (
+              <button
+                className="btn-primary"
+                onClick={() => onNavigate('review')}
+                style={{ background: 'linear-gradient(135deg, #6B4FBB, #9B6FDB)' }}
+              >
+                복습하기
+              </button>
+            )}
+          </div>
+        ) : (
+          <button
+            className="btn-primary"
+            onClick={() => onNavigate('study')}
+            disabled={!ready}
+          >
+            {ready ? '오늘 공부 시작하기' : '단어 불러오는 중...'}
+          </button>
+        )}
 
         <button
           onClick={() => setShowShare(true)}

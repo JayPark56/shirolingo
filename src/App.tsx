@@ -10,9 +10,10 @@ import { QuizPage } from './pages/QuizPage'
 import { ResultPage } from './pages/ResultPage'
 import { CollectionPage } from './pages/CollectionPage'
 import { WordbookPage } from './pages/WordbookPage'
+import { ReviewPage } from './pages/ReviewPage'
 import { OnboardingSlides } from './components/OnboardingSlides'
 
-export type AppPage = 'home' | 'study' | 'quiz' | 'result' | 'collection' | 'gacha' | 'wordbook'
+export type AppPage = 'home' | 'study' | 'quiz' | 'result' | 'collection' | 'gacha' | 'wordbook' | 'review'
 
 export default function App() {
   const { userId, setUserId, progress } = useStore()
@@ -59,6 +60,7 @@ export default function App() {
     case 'result': return <ResultPage onNavigate={nav} />
     case 'collection': return <CollectionPage onNavigate={nav} />
     case 'wordbook': return <WordbookPage onNavigate={nav} />
+    case 'review': return <ReviewPage onNavigate={nav} />
     case 'gacha': return <GachaPage isFirstLaunch={false} onComplete={() => nav('home')} />
     default: return <HomePage onNavigate={nav} onShowHelp={() => setShowHelp(true)} />
   }
