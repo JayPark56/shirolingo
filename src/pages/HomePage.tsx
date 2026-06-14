@@ -8,9 +8,12 @@ import { TabBar } from '../components/TabBar'
 import { ShareModal } from '../components/ShareModal'
 import type { AppPage } from '../App'
 
-interface Props { onNavigate: (p: AppPage) => void }
+interface Props {
+  onNavigate: (p: AppPage) => void
+  onShowHelp: () => void
+}
 
-export function HomePage({ onNavigate }: Props) {
+export function HomePage({ onNavigate, onShowHelp }: Props) {
   const { progress } = useStore()
   const { ready } = useWordDatabase()
   const [showShare, setShowShare] = useState(false)
@@ -31,8 +34,22 @@ export function HomePage({ onNavigate }: Props) {
         alignItems:'center', padding:'16px 0' }}>
         <h1 style={{ fontFamily:'monospace', fontSize:20, fontWeight:700,
           color:'white' }}>Shirolingo</h1>
-        <div style={{ color:'var(--accent-secondary)', fontWeight:700 }}>
-          🔥 {progress.currentStreak}일
+        <div style={{ display:'flex', alignItems:'center', gap:12 }}>
+          <div style={{ color:'var(--accent-secondary)', fontWeight:700 }}>
+            {progress.currentStreak}일 연속
+          </div>
+          <button
+            onClick={onShowHelp}
+            style={{
+              width:28, height:28, borderRadius:'50%',
+              background:'rgba(255,255,255,0.08)',
+              border:'1px solid rgba(255,255,255,0.15)',
+              color:'var(--text-secondary)', fontSize:13, fontWeight:700,
+              cursor:'pointer', display:'flex', alignItems:'center', justifyContent:'center',
+            }}
+          >
+            ?
+          </button>
         </div>
       </div>
 
