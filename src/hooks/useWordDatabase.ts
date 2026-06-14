@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import type { Word, JLPTLevel, QuizQuestion, QuizType } from '../types'
+import type { Word, JLPTLevel, QuizQuestion, QuizType, WrongWord } from '../types'
 
 const LEVELS: JLPTLevel[] = ['n5', 'n4', 'n3', 'n2', 'n1']
 
@@ -40,21 +40,42 @@ export class WordDatabase {
     this.loaded = true
   }
 
-  selectDailyWords(studiedIds: Set<string>): { word: Word; level: JLPTLevel }[] {
+  selectDailyWords(studiedIds: Set<string>, wrongWords: WrongWord[] = []): { word: Word; level: JLPTLevel }[] {
     const result: { word: Word; level: JLPTLevel }[] = []
     const dayOfYear = Math.floor(
       (Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / 86400000
     )
 
+    // First: up to 2 wrong words (most-wrong first), prioritized in today's study.
+    const sortedWrong = [...wrongWords].sort((a, b) => b.wrongCount - a.wrongCount)
+    const wrongToInclude = sortedWrong.slice(0, 2)
+    for (const ww of wrongToInclude) {
+      for (const [level, words] of this.wordsByLevel.entries()) {
+        const found = words.find(w => w.id === ww.wordId)
+        if (found) {
+          result.push({ word: found, level })
+          break
+        }
+      }
+    }
+
+    const wrongIds = new Set(wrongToInclude.map(w => w.wordId))
+    const newWordsNeeded = 10 - result.length
+    const wordsPerLevel = Math.ceil(newWordsNeeded / 5)
+    let remaining = newWordsNeeded
+
+    // Then: fill the rest with new words (skip wrong-word ids).
     for (const level of LEVELS) {
+      if (remaining <= 0) break
       const words = this.wordsByLevel.get(level) ?? []
-      const unstudied = words.filter(w => !studiedIds.has(w.id))
-      const pool = unstudied.length > 0 ? unstudied : words
+      const available = words.filter(w => !studiedIds.has(w.id) && !wrongIds.has(w.id))
+      const pool = available.length > 0 ? available : words.filter(w => !wrongIds.has(w.id))
       if (pool.length === 0) continue
 
+      const count = Math.min(wordsPerLevel, remaining)
       const selected: Word[] = []
       let attempts = 0
-      while (selected.length < 2 && attempts < 200) {
+      while (selected.length < count && attempts < 200) {
         const idx = (dayOfYear * (selected.length + 1) * (LEVELS.indexOf(level) + 1) + attempts) % pool.length
         if (!selected.find(w => w.id === pool[idx].id)) {
           selected.push(pool[idx])
@@ -62,8 +83,26 @@ export class WordDatabase {
         attempts++
       }
       selected.forEach(w => result.push({ word: w, level }))
+      remaining -= selected.length
     }
-    return result
+
+    // Top-up: if a level's small pool left the day short of 10, pull any remaining
+    // (non-duplicate, non-wrong) words so the daily set is always ~10.
+    if (result.length < 10) {
+      const have = new Set(result.map(r => r.word.id))
+      for (const level of LEVELS) {
+        if (result.length >= 10) break
+        for (const w of (this.wordsByLevel.get(level) ?? [])) {
+          if (result.length >= 10) break
+          if (!have.has(w.id) && !wrongIds.has(w.id)) {
+            result.push({ word: w, level })
+            have.add(w.id)
+          }
+        }
+      }
+    }
+
+    return result.slice(0, 10)
   }
 
   makeQuizQuestions(words: { word: Word; level: JLPTLevel }[]): QuizQuestion[] {

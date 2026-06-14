@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useStore } from '../store/useStore'
+import { useFirebaseSync } from '../hooks/useFirebaseSync'
 import { ProgressBar } from '../components/ProgressBar'
 import type { AppPage } from '../App'
 
@@ -7,6 +8,7 @@ interface Props { onNavigate: (p: AppPage) => void }
 
 export function QuizPage({ onNavigate }: Props) {
   const { currentSession, setSession } = useStore()
+  const { saveProgress } = useFirebaseSync()
   const [answerState, setAnswerState] = useState<'idle'|'correct'|'wrong'>('idle')
   const [inputValue, setInputValue] = useState('')
 
@@ -38,6 +40,50 @@ export function QuizPage({ onNavigate }: Props) {
     const newScore = correct ? score + 1 : score
 
     setAnswerState(correct ? 'correct' : 'wrong')
+
+    // Wrong-word notebook tracking. Read the LIVE store progress (not the render
+    // closure) so chained answers build on each other's writes.
+    const live = useStore.getState().progress
+    if (live) {
+      const updatedProgress = { ...live }
+      const wrongWords = [...(live.wrongWords ?? [])]
+      const existingIdx = wrongWords.findIndex(w => w.wordId === question.word.id)
+
+      if (!correct) {
+        if (existingIdx >= 0) {
+          wrongWords[existingIdx] = {
+            ...wrongWords[existingIdx],
+            wrongCount: wrongWords[existingIdx].wrongCount + 1,
+            consecutiveCorrect: 0,
+            lastWrongDate: new Date().toISOString(),
+          }
+        } else {
+          wrongWords.push({
+            wordId: question.word.id,
+            word: question.word,
+            wrongCount: 1,
+            consecutiveCorrect: 0,
+            lastWrongDate: new Date().toISOString(),
+            addedDate: new Date().toISOString(),
+          })
+        }
+        updatedProgress.wrongWords = wrongWords
+        saveProgress(updatedProgress)
+      } else if (existingIdx >= 0) {
+        // Correct answer for a tracked wrong word
+        const newConsecutive = wrongWords[existingIdx].consecutiveCorrect + 1
+        if (newConsecutive >= 2) {
+          wrongWords.splice(existingIdx, 1)  // mastered — remove
+        } else {
+          wrongWords[existingIdx] = {
+            ...wrongWords[existingIdx],
+            consecutiveCorrect: newConsecutive,
+          }
+        }
+        updatedProgress.wrongWords = wrongWords
+        saveProgress(updatedProgress)
+      }
+    }
 
     setTimeout(() => {
       setAnswerState('idle')

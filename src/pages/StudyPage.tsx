@@ -17,7 +17,7 @@ export function StudyPage({ onNavigate }: Props) {
   useEffect(() => {
     if (!ready || !progress) return
     const studiedIds = new Set(progress.studiedWordIds)
-    const selected = db.selectDailyWords(studiedIds)
+    const selected = db.selectDailyWords(studiedIds, progress.wrongWords ?? [])
     setWords(selected)
   }, [ready, progress])
 

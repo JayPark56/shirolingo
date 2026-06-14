@@ -20,16 +20,19 @@ export function ResultPage({ onNavigate }: Props) {
   const passed = score >= 8
 
   useEffect(() => {
-    if (!passed || !progress || !currentSession) return
+    // Read the LIVE store progress (not the mount-time closure) so the wrong-word
+    // updates the final quiz answer just wrote are preserved by this full-doc save.
+    const p = useStore.getState().progress
+    if (!passed || !p || !currentSession) return
 
-    const activeId = progress.activeCharacterId
-    const prevDays = progress.characterDaysMap[activeId] ?? 0
+    const activeId = p.activeCharacterId
+    const prevDays = p.characterDaysMap[activeId] ?? 0
     const prevStage = Math.min(Math.floor(prevDays / 7), 3)
     const newDays = prevDays + 1
     const newStage = Math.min(Math.floor(newDays / 7), 3)
 
     const today = new Date()
-    const lastDate = progress.lastStudyDate
+    const lastDate = p.lastStudyDate
 
     // Streak (matches iOS): same calendar day → unchanged, yesterday → +1, else reset to 1.
     let newStreak: number
@@ -40,24 +43,24 @@ export function ResultPage({ onNavigate }: Props) {
       const yesterday = new Date()
       yesterday.setDate(yesterday.getDate() - 1)
       if (last.toDateString() === today.toDateString()) {
-        newStreak = progress.currentStreak            // already studied today → no change
+        newStreak = p.currentStreak            // already studied today → no change
       } else if (last.toDateString() === yesterday.toDateString()) {
-        newStreak = progress.currentStreak + 1
+        newStreak = p.currentStreak + 1
       } else {
         newStreak = 1
       }
     }
-    const newTotal = progress.totalDaysCompleted + 1
+    const newTotal = p.totalDaysCompleted + 1
 
     const updated = {
-      ...progress,
+      ...p,
       totalDaysCompleted: newTotal,
       currentStreak: newStreak,
-      longestStreak: Math.max(progress.longestStreak, newStreak),
+      longestStreak: Math.max(p.longestStreak, newStreak),
       lastStudyDate: today.toISOString(),
-      characterDaysMap: { ...progress.characterDaysMap, [activeId]: newDays },
+      characterDaysMap: { ...p.characterDaysMap, [activeId]: newDays },
       studiedWordIds: [
-        ...progress.studiedWordIds,
+        ...p.studiedWordIds,
         ...(currentSession.words.map(w => w.word.id)),
       ],
     }

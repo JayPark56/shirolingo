@@ -65,5 +65,6 @@ export function defaultProgress(userId: string): UserProgress {
     studiedWordIds: [],
     characterDaysMap: {},
     gachaRerollsAvailable: 0,
+    wrongWords: [],
   }
 }

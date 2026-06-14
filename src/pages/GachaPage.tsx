@@ -9,10 +9,11 @@ type RevealPhase = 'idle' | 'shaking' | 'flashing' | 'paused' | 'flipping' | 're
 
 interface Props {
   isFirstLaunch: boolean
+  isSurprise?: boolean
   onComplete: () => void
 }
 
-export function GachaPage({ isFirstLaunch, onComplete }: Props) {
+export function GachaPage({ isFirstLaunch, isSurprise = false, onComplete }: Props) {
   const { progress } = useStore()
   const { saveProgress } = useFirebaseSync()
   const [result, setResult] = useState<GachaResult | null>(null)
@@ -25,7 +26,10 @@ export function GachaPage({ isFirstLaunch, onComplete }: Props) {
   // Firestore snapshot loads — drawing in a []-effect would leave a blank page).
   useEffect(() => {
     if (progress && !result) {
-      setResult(drawGacha(progress.ownedCharacterIds))
+      const r = drawGacha(progress.ownedCharacterIds)
+      // Pool empty (every character already owned) — exit instead of a blank dead-end.
+      if (r === null) { onComplete(); return }
+      setResult(r)
     }
   }, [progress])
 
@@ -109,7 +113,7 @@ export function GachaPage({ isFirstLaunch, onComplete }: Props) {
 
       <h2 style={{ color:'var(--text-primary)', fontFamily:'monospace',
         fontSize:20, fontWeight:700, textAlign:'center' }}>
-        {isFirstLaunch ? '첫 번째 동료를 뽑아보세요!' : '새로운 동료 등장!'}
+        {isSurprise ? '깜짝 가챠!' : isFirstLaunch ? '첫 번째 동료를 뽑아보세요!' : '새로운 동료 등장!'}
       </h2>
 
       {/* Flash overlay */}
@@ -233,9 +237,9 @@ export function GachaPage({ isFirstLaunch, onComplete }: Props) {
           <button className="btn-primary" onClick={handleConfirm}>
             이 캐릭터로 시작!
           </button>
-          {!rerollUsed && (
+          {!rerollUsed && !isSurprise && (
             <button className="btn-secondary" onClick={handleReroll}>
-              🔄 다시 뽑기 (1회)
+              다시 뽑기 (1회)
             </button>
           )}
         </div>

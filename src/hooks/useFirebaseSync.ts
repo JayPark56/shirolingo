@@ -24,12 +24,14 @@ export function useFirebaseSync() {
     return unsub
   }, [userId])
 
-  // Save progress to Firestore.
+  // Save progress to Firestore. Update the local store FIRST (optimistic) so any
+  // chained reads (next quiz answer, ResultPage) see the latest immediately and
+  // can't clobber it with a stale copy; the network write follows.
   const saveProgress = useCallback(async (updated: UserProgress) => {
     if (!userId) return
+    setProgress(updated)
     const ref = doc(db, 'users', userId)
     await setDoc(ref, updated)
-    setProgress(updated)
   }, [userId])
 
   return { saveProgress }

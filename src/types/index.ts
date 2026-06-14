@@ -30,6 +30,15 @@ export interface GachaResult {
   isRare: boolean
 }
 
+export interface WrongWord {
+  wordId: string
+  word: Word
+  wrongCount: number
+  consecutiveCorrect: number  // resets to 0 on wrong, increments on correct
+  lastWrongDate: string
+  addedDate: string
+}
+
 export interface UserProgress {
   userId: string
   totalDaysCompleted: number
@@ -42,6 +51,7 @@ export interface UserProgress {
   studiedWordIds: string[]
   characterDaysMap: Record<string, number>
   gachaRerollsAvailable: number
+  wrongWords: WrongWord[]
 }
 
 export interface DailySession {
