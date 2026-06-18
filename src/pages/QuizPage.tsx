@@ -1,7 +1,8 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, type CSSProperties } from 'react'
 import { useStore } from '../store/useStore'
 import { useFirebaseSync } from '../hooks/useFirebaseSync'
 import { ProgressBar } from '../components/ProgressBar'
+import { hapticLight, hapticMedium, hapticSuccess, hapticError } from '../utils/haptics'
 import type { AppPage } from '../App'
 
 interface Props { onNavigate: (p: AppPage) => void }
@@ -11,6 +12,7 @@ export function QuizPage({ onNavigate }: Props) {
   const { saveProgress } = useFirebaseSync()
   const [answerState, setAnswerState] = useState<'idle'|'correct'|'wrong'>('idle')
   const [inputValue, setInputValue] = useState('')
+  const [pendingAnswer, setPendingAnswer] = useState<string | null>(null)
 
   useEffect(() => {
     if (!currentSession) { onNavigate('home'); return }
@@ -37,9 +39,10 @@ export function QuizPage({ onNavigate }: Props) {
   function submitAnswer(answer: string) {
     if (answerState !== 'idle' || !currentSession) return
     const correct = answer.trim() === question.correctAnswer.trim()
-    const newScore = correct ? score + 1 : score
 
     setAnswerState(correct ? 'correct' : 'wrong')
+    if (correct) hapticSuccess()
+    else hapticError()
 
     // Wrong-word notebook tracking. Read the LIVE store progress (not the render
     // closure) so chained answers build on each other's writes.
@@ -88,7 +91,11 @@ export function QuizPage({ onNavigate }: Props) {
     setTimeout(() => {
       setAnswerState('idle')
       setInputValue('')
+      setPendingAnswer(null)
 
+      // Bump the score exactly as the next question appears (feels instant,
+      // not lagging behind the 1.5s feedback animation).
+      const newScore = correct ? score + 1 : score
       const updated = {
         ...currentSession,
         score: newScore,
@@ -102,6 +109,30 @@ export function QuizPage({ onNavigate }: Props) {
         setSession(updated)
       }
     }, 1500)
+  }
+
+  // Choice button styling across the four interaction states.
+  function choiceStyle(choice: string): CSSProperties {
+    let background = 'var(--card-bg)'
+    let border = '1px solid transparent'
+    if (answerState === 'idle') {
+      if (pendingAnswer === choice) {
+        background = 'rgba(233,69,96,0.15)'
+        border = '1px solid var(--accent)'
+      }
+    } else if (choice === question.correctAnswer) {
+      background = 'rgba(76,175,80,0.25)'
+      border = '1px solid var(--success)'
+    } else if (choice === pendingAnswer) {
+      background = 'rgba(244,67,54,0.2)'
+      border = '1px solid var(--fail)'
+    }
+    return {
+      background, border, borderRadius: 12, padding: '16px 12px',
+      color: 'var(--text-primary)', fontSize: 15,
+      cursor: answerState === 'idle' ? 'pointer' : 'default',
+      fontWeight: 500, textAlign: 'center', transition: 'all 0.2s',
+    }
   }
 
   return (
@@ -197,38 +228,34 @@ export function QuizPage({ onNavigate }: Props) {
 
         {/* Choices or input */}
         {question.choices.length > 0 ? (
-          <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:12 }}>
-            {question.choices.map(choice => (
-              <button key={choice}
-                onClick={() => submitAnswer(choice)}
-                disabled={answerState !== 'idle'}
-                style={{
-                  background: answerState !== 'idle'
-                    ? choice === question.correctAnswer
-                      ? 'rgba(76,175,80,0.25)'
-                      : 'var(--card-bg)'
-                    : 'var(--card-bg)',
-                  border: `1px solid ${
-                    answerState !== 'idle' && choice === question.correctAnswer
-                      ? 'var(--success)'
-                      : 'transparent'
-                  }`,
-                  borderRadius:12, padding:'16px 12px',
-                  color:'var(--text-primary)', fontSize:15,
-                  cursor: answerState === 'idle' ? 'pointer' : 'default',
-                  fontWeight:500, textAlign:'center',
-                  transition:'all 0.2s',
-                }}>
-                {choice}
+          <div style={{ display:'flex', flexDirection:'column', gap:12 }}>
+            <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:12 }}>
+              {question.choices.map(choice => (
+                <button key={choice}
+                  onClick={() => {
+                    if (answerState !== 'idle') return
+                    hapticLight()
+                    setPendingAnswer(choice)
+                  }}
+                  disabled={answerState !== 'idle'}
+                  style={choiceStyle(choice)}>
+                  {choice}
+                </button>
+              ))}
+            </div>
+            {pendingAnswer && answerState === 'idle' && (
+              <button className="btn-primary"
+                onClick={() => { hapticMedium(); submitAnswer(pendingAnswer) }}>
+                확인
               </button>
-            ))}
+            )}
           </div>
         ) : (
           <div style={{ display:'flex', flexDirection:'column', gap:12 }}>
             <input
               value={inputValue}
               onChange={e => setInputValue(e.target.value)}
-              onKeyDown={e => e.key === 'Enter' && submitAnswer(inputValue)}
+              onKeyDown={e => { if (e.key === 'Enter') { hapticMedium(); submitAnswer(inputValue) } }}
               disabled={answerState !== 'idle'}
               placeholder="여기에 입력하세요"
               style={{ background:'var(--card-bg)', border:'1px solid rgba(255,255,255,0.1)',
@@ -236,7 +263,7 @@ export function QuizPage({ onNavigate }: Props) {
                 textAlign:'center', outline:'none' }}
             />
             <button className="btn-primary"
-              onClick={() => submitAnswer(inputValue)}
+              onClick={() => { hapticMedium(); submitAnswer(inputValue) }}
               disabled={!inputValue || answerState !== 'idle'}>
               확인
             </button>

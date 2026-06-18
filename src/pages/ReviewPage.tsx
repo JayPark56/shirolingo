@@ -1,8 +1,9 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, type CSSProperties } from 'react'
 import { useStore } from '../store/useStore'
 import { useWordDatabase } from '../hooks/useWordDatabase'
 import { GachaPage } from './GachaPage'
 import { ProgressBar } from '../components/ProgressBar'
+import { hapticLight, hapticMedium, hapticSuccess, hapticError } from '../utils/haptics'
 import type { AppPage } from '../App'
 import type { Word, JLPTLevel, QuizQuestion } from '../types'
 
@@ -22,6 +23,7 @@ export function ReviewPage({ onNavigate }: Props) {
   const [score, setScore] = useState(0)
   const [answerState, setAnswerState] = useState<'idle'|'correct'|'wrong'>('idle')
   const [inputValue, setInputValue] = useState('')
+  const [pendingAnswer, setPendingAnswer] = useState<string | null>(null)
 
   useEffect(() => {
     if (!ready || !progress) return
@@ -38,13 +40,23 @@ export function ReviewPage({ onNavigate }: Props) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [ready, progress])
 
-  function speak(text: string) {
+  function speak(text: string, haptic = true) {
+    if (haptic) hapticLight()
     if (!('speechSynthesis' in window)) return
     const utter = new SpeechSynthesisUtterance(text)
     utter.lang = 'ja-JP'
     utter.rate = 0.8
     speechSynthesis.speak(utter)
   }
+
+  // Auto-play the audio when an audioChoice question appears (mirrors QuizPage),
+  // without a haptic since the user didn't tap.
+  useEffect(() => {
+    if (phase !== 'quiz') return
+    const q = questions[quizIndex]
+    if (q?.type === 'audioChoice') speak(q.word.reading, false)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [phase, quizIndex])
 
   function startQuiz() {
     const qs = db.makeQuizQuestions(words)
@@ -61,13 +73,17 @@ export function ReviewPage({ onNavigate }: Props) {
     if (!question) return
     const correct = answer.trim() === question.correctAnswer.trim()
     setAnswerState(correct ? 'correct' : 'wrong')
-    const newScore = correct ? score + 1 : score
+    if (correct) hapticSuccess()
+    else hapticError()
 
     setTimeout(() => {
       setAnswerState('idle')
       setInputValue('')
+      setPendingAnswer(null)
+      // Bump the score exactly as the next question appears.
+      const newScore = correct ? score + 1 : score
+      setScore(newScore)
       if (quizIndex + 1 >= questions.length) {
-        setScore(newScore)
         // 1% surprise gacha (only if a draw is possible)
         if (Math.random() < 0.01 &&
           progress &&
@@ -78,10 +94,34 @@ export function ReviewPage({ onNavigate }: Props) {
           setPhase('result')
         }
       } else {
-        setScore(newScore)
         setQuizIndex(i => i + 1)
       }
     }, 1500)
+  }
+
+  // Choice button styling across the four interaction states.
+  function choiceStyle(choice: string): CSSProperties {
+    const question = questions[quizIndex]
+    let background = 'var(--card-bg)'
+    let border = '1px solid transparent'
+    if (answerState === 'idle') {
+      if (pendingAnswer === choice) {
+        background = 'rgba(155,111,219,0.18)'
+        border = '1px solid #9B6FDB'
+      }
+    } else if (question && choice === question.correctAnswer) {
+      background = 'rgba(76,175,80,0.25)'
+      border = '1px solid var(--success)'
+    } else if (choice === pendingAnswer) {
+      background = 'rgba(244,67,54,0.2)'
+      border = '1px solid var(--fail)'
+    }
+    return {
+      background, border, borderRadius: 12, padding: '16px 12px',
+      color: 'var(--text-primary)', fontSize: 14,
+      cursor: answerState === 'idle' ? 'pointer' : 'default',
+      fontWeight: 500, textAlign: 'center', transition: 'all 0.2s',
+    }
   }
 
   // INTRO phase
@@ -167,10 +207,17 @@ export function ReviewPage({ onNavigate }: Props) {
           color="#9B6FDB" height={4} />
 
         <div style={{ flex: 1, display: 'flex', alignItems: 'center',
-          justifyContent: 'center', perspective: 1000 }}
-          onClick={() => setIsFlipped(f => !f)}>
+          justifyContent: 'center', perspective: 1000 }}>
 
-          <div style={{
+          <div
+            onClick={(e) => {
+              const rect = e.currentTarget.getBoundingClientRect()
+              if (e.clientY - rect.top > rect.height / 2) {
+                hapticLight()
+                setIsFlipped(f => !f)
+              }
+            }}
+            style={{
             width: '100%', height: 300, position: 'relative',
             transformStyle: 'preserve-3d',
             transition: 'transform 0.4s ease',
@@ -232,17 +279,19 @@ export function ReviewPage({ onNavigate }: Props) {
 
         <div style={{ display: 'flex', justifyContent: 'space-between',
           alignItems: 'center', padding: '0 0 40px' }}>
-          <button onClick={() => { setIsFlipped(false); setCurrentIndex(i => Math.max(0, i - 1)) }}
+          <button onClick={() => { hapticLight(); setIsFlipped(false); setCurrentIndex(i => Math.max(0, i - 1)) }}
             disabled={currentIndex === 0}
-            style={{ background: 'none', border: 'none', fontSize: 28,
+            style={{ background: 'none', border: 'none', fontSize: 36,
               color: currentIndex === 0 ? 'rgba(255,255,255,0.15)' : 'var(--text-primary)',
-              cursor: currentIndex === 0 ? 'not-allowed' : 'pointer', padding: '8px 16px' }}>
+              cursor: currentIndex === 0 ? 'not-allowed' : 'pointer',
+              padding: '12px 20px', minWidth: 60, minHeight: 60,
+              display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             ‹
           </button>
 
           {currentIndex === words.length - 1 ? (
             <button className="btn-primary"
-              onClick={() => setPhase('quizPrompt')}
+              onClick={() => { hapticLight(); setPhase('quizPrompt') }}
               style={{ maxWidth: 200, fontSize: 15,
                 background: 'linear-gradient(135deg, #6B4FBB, #9B6FDB)' }}>
               다음
@@ -253,12 +302,13 @@ export function ReviewPage({ onNavigate }: Props) {
             </div>
           )}
 
-          <button onClick={() => { setIsFlipped(false); setCurrentIndex(i => Math.min(words.length - 1, i + 1)) }}
+          <button onClick={() => { hapticLight(); setIsFlipped(false); setCurrentIndex(i => Math.min(words.length - 1, i + 1)) }}
             disabled={currentIndex === words.length - 1}
-            style={{ background: 'none', border: 'none', fontSize: 28,
+            style={{ background: 'none', border: 'none', fontSize: 36,
               color: currentIndex === words.length - 1 ? 'rgba(255,255,255,0.15)' : 'var(--text-primary)',
               cursor: currentIndex === words.length - 1 ? 'not-allowed' : 'pointer',
-              padding: '8px 16px' }}>
+              padding: '12px 20px', minWidth: 60, minHeight: 60,
+              display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             ›
           </button>
         </div>
@@ -386,34 +436,36 @@ export function ReviewPage({ onNavigate }: Props) {
           )}
 
           {question.choices.length > 0 ? (
-            <div style={{ display: 'grid',
-              gridTemplateColumns: '1fr 1fr', gap: 12 }}>
-              {question.choices.map(choice => (
-                <button key={choice}
-                  onClick={() => submitAnswer(choice)}
-                  disabled={answerState !== 'idle'}
-                  style={{
-                    background: answerState !== 'idle' &&
-                      choice === question.correctAnswer
-                      ? 'rgba(76,175,80,0.25)' : 'var(--card-bg)',
-                    border: `1px solid ${answerState !== 'idle' &&
-                      choice === question.correctAnswer
-                      ? 'var(--success)' : 'transparent'}`,
-                    borderRadius: 12, padding: '16px 12px',
-                    color: 'var(--text-primary)', fontSize: 14,
-                    cursor: answerState === 'idle' ? 'pointer' : 'default',
-                    fontWeight: 500, textAlign: 'center',
-                  }}>
-                  {choice}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+              <div style={{ display: 'grid',
+                gridTemplateColumns: '1fr 1fr', gap: 12 }}>
+                {question.choices.map(choice => (
+                  <button key={choice}
+                    onClick={() => {
+                      if (answerState !== 'idle') return
+                      hapticLight()
+                      setPendingAnswer(choice)
+                    }}
+                    disabled={answerState !== 'idle'}
+                    style={choiceStyle(choice)}>
+                    {choice}
+                  </button>
+                ))}
+              </div>
+              {pendingAnswer && answerState === 'idle' && (
+                <button className="btn-primary"
+                  onClick={() => { hapticMedium(); submitAnswer(pendingAnswer) }}
+                  style={{ background: 'linear-gradient(135deg, #6B4FBB, #9B6FDB)' }}>
+                  확인
                 </button>
-              ))}
+              )}
             </div>
           ) : (
             <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
               <input
                 value={inputValue}
                 onChange={e => setInputValue(e.target.value)}
-                onKeyDown={e => e.key === 'Enter' && submitAnswer(inputValue)}
+                onKeyDown={e => { if (e.key === 'Enter') { hapticMedium(); submitAnswer(inputValue) } }}
                 disabled={answerState !== 'idle'}
                 placeholder="여기에 입력하세요"
                 style={{ background: 'var(--card-bg)',
@@ -424,7 +476,7 @@ export function ReviewPage({ onNavigate }: Props) {
                   fontFamily: 'Paperlogy, sans-serif' }}
               />
               <button className="btn-primary"
-                onClick={() => submitAnswer(inputValue)}
+                onClick={() => { hapticMedium(); submitAnswer(inputValue) }}
                 disabled={!inputValue || answerState !== 'idle'}
                 style={{ background: 'linear-gradient(135deg, #6B4FBB, #9B6FDB)' }}>
                 확인

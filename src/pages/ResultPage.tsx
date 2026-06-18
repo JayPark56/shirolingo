@@ -59,10 +59,12 @@ export function ResultPage({ onNavigate }: Props) {
       longestStreak: Math.max(p.longestStreak, newStreak),
       lastStudyDate: today.toISOString(),
       characterDaysMap: { ...p.characterDaysMap, [activeId]: newDays },
-      studiedWordIds: [
+      // Dedupe: wrong words re-injected into the daily set are already studied,
+      // so a plain append would accumulate duplicate ids in the persisted doc.
+      studiedWordIds: Array.from(new Set([
         ...p.studiedWordIds,
-        ...(currentSession.words.map(w => w.word.id)),
-      ],
+        ...currentSession.words.map(w => w.word.id),
+      ])),
     }
 
     saveProgress(updated)

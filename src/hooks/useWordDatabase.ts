@@ -40,69 +40,58 @@ export class WordDatabase {
     this.loaded = true
   }
 
-  selectDailyWords(studiedIds: Set<string>, wrongWords: WrongWord[] = []): { word: Word; level: JLPTLevel }[] {
-    const result: { word: Word; level: JLPTLevel }[] = []
+  selectDailyWords(
+    studiedIds: Set<string>,
+    wrongWords: WrongWord[] = []
+  ): { word: Word; level: JLPTLevel; isWrongWord?: boolean }[] {
+    // Step 1: always select 10 NEW words (2 per level), preferring unstudied.
+    const newWords: { word: Word; level: JLPTLevel }[] = []
     const dayOfYear = Math.floor(
       (Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / 86400000
     )
 
-    // First: up to 2 wrong words (most-wrong first), prioritized in today's study.
-    const sortedWrong = [...wrongWords].sort((a, b) => b.wrongCount - a.wrongCount)
-    const wrongToInclude = sortedWrong.slice(0, 2)
-    for (const ww of wrongToInclude) {
-      for (const [level, words] of this.wordsByLevel.entries()) {
-        const found = words.find(w => w.id === ww.wordId)
-        if (found) {
-          result.push({ word: found, level })
-          break
-        }
-      }
-    }
-
-    const wrongIds = new Set(wrongToInclude.map(w => w.wordId))
-    const newWordsNeeded = 10 - result.length
-    const wordsPerLevel = Math.ceil(newWordsNeeded / 5)
-    let remaining = newWordsNeeded
-
-    // Then: fill the rest with new words (skip wrong-word ids).
     for (const level of LEVELS) {
-      if (remaining <= 0) break
       const words = this.wordsByLevel.get(level) ?? []
-      const available = words.filter(w => !studiedIds.has(w.id) && !wrongIds.has(w.id))
-      const pool = available.length > 0 ? available : words.filter(w => !wrongIds.has(w.id))
+      const unstudied = words.filter(w => !studiedIds.has(w.id))
+      const pool = unstudied.length > 0 ? unstudied : words
       if (pool.length === 0) continue
 
-      const count = Math.min(wordsPerLevel, remaining)
       const selected: Word[] = []
       let attempts = 0
-      while (selected.length < count && attempts < 200) {
-        const idx = (dayOfYear * (selected.length + 1) * (LEVELS.indexOf(level) + 1) + attempts) % pool.length
+      while (selected.length < 2 && attempts < 200) {
+        const idx = (dayOfYear * (selected.length + 1) *
+          (LEVELS.indexOf(level) + 1) + attempts) % pool.length
         if (!selected.find(w => w.id === pool[idx].id)) {
           selected.push(pool[idx])
         }
         attempts++
       }
-      selected.forEach(w => result.push({ word: w, level }))
-      remaining -= selected.length
+      selected.forEach(w => newWords.push({ word: w, level }))
     }
 
-    // Top-up: if a level's small pool left the day short of 10, pull any remaining
-    // (non-duplicate, non-wrong) words so the daily set is always ~10.
-    if (result.length < 10) {
-      const have = new Set(result.map(r => r.word.id))
-      for (const level of LEVELS) {
-        if (result.length >= 10) break
-        for (const w of (this.wordsByLevel.get(level) ?? [])) {
-          if (result.length >= 10) break
-          if (!have.has(w.id) && !wrongIds.has(w.id)) {
-            result.push({ word: w, level })
-            have.add(w.id)
-          }
+    // Step 2: add up to 2 wrong words ON TOP (most-wrong first, no dupes of new).
+    const newWordIds = new Set(newWords.map(w => w.word.id))
+    const sortedWrong = [...wrongWords]
+      .sort((a, b) => b.wrongCount - a.wrongCount)
+      .filter(ww => !newWordIds.has(ww.wordId))
+      .slice(0, 2)
+
+    const wrongEntries: { word: Word; level: JLPTLevel; isWrongWord: boolean }[] = []
+    for (const ww of sortedWrong) {
+      for (const [level, words] of this.wordsByLevel.entries()) {
+        const found = words.find(w => w.id === ww.wordId)
+        if (found) {
+          wrongEntries.push({ word: found, level, isWrongWord: true })
+          break
         }
       }
     }
 
-    return result.slice(0, 10)
+    // Step 3: combine — wrong words first, then the 10 new words.
+    return [
+      ...wrongEntries,
+      ...newWords.map(w => ({ ...w, isWrongWord: false })),
+    ]
   }
 
   makeQuizQuestions(words: { word: Word; level: JLPTLevel }[]): QuizQuestion[] {
@@ -120,6 +109,20 @@ export class WordDatabase {
     }).sort(() => Math.random() - 0.5)
   }
 
+  // Build 4 choices whose DISPLAYED TEXT is unique. The dataset has many words
+  // sharing a meaning/reading, so a distractor's text can equal the correct
+  // answer's; without this the duplicate would collide on React keys and be
+  // painted as "correct" (and a wrong pick of it would score as correct).
+  private uniqueChoices(correct: string, distractorTexts: string[]): string[] {
+    const seen = new Set<string>([correct])
+    const choices = [correct]
+    for (const t of distractorTexts) {
+      if (choices.length >= 4) break
+      if (!seen.has(t)) { seen.add(t); choices.push(t) }
+    }
+    return choices.sort(() => Math.random() - 0.5)
+  }
+
   private makeQuestion(word: Word, type: QuizType, allWords: Word[]): QuizQuestion {
     const displayText = word.kanji ?? word.reading
     const distractors = allWords.filter(w => w.id !== word.id).sort(() => Math.random() - 0.5)
@@ -129,14 +132,14 @@ export class WordDatabase {
         return {
           id: `${word.id}-mc`,
           word, type,
-          choices: [word.meaning, ...distractors.slice(0, 3).map(w => w.meaning)].sort(() => Math.random() - 0.5),
+          choices: this.uniqueChoices(word.meaning, distractors.map(w => w.meaning)),
           correctAnswer: word.meaning,
         }
       case 'readingChoice':
         return {
           id: `${word.id}-rc`,
           word, type,
-          choices: [word.reading, ...distractors.slice(0, 3).map(w => w.reading)].sort(() => Math.random() - 0.5),
+          choices: this.uniqueChoices(word.reading, distractors.map(w => w.reading)),
           correctAnswer: word.reading,
         }
       case 'readingInput':
@@ -147,7 +150,7 @@ export class WordDatabase {
         return {
           id: `${word.id}-ac`,
           word, type,
-          choices: [displayText, ...distractors.slice(0, 3).map(w => w.kanji ?? w.reading)].sort(() => Math.random() - 0.5),
+          choices: this.uniqueChoices(displayText, distractors.map(w => w.kanji ?? w.reading)),
           correctAnswer: displayText,
         }
     }

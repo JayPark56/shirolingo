@@ -14,7 +14,7 @@ interface AppState {
 
   // Current session
   currentSession: {
-    words: { word: Word; level: string }[]
+    words: { word: Word; level: string; isWrongWord?: boolean }[]
     questions: QuizQuestion[]
     currentWordIndex: number
     currentQuestionIndex: number

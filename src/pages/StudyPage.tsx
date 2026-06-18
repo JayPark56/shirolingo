@@ -1,7 +1,8 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useStore } from '../store/useStore'
 import { useWordDatabase, getLevelColor } from '../hooks/useWordDatabase'
 import { ProgressBar } from '../components/ProgressBar'
+import { hapticLight } from '../utils/haptics'
 import type { AppPage } from '../App'
 import type { Word, JLPTLevel } from '../types'
 
@@ -10,9 +11,12 @@ interface Props { onNavigate: (p: AppPage) => void }
 export function StudyPage({ onNavigate }: Props) {
   const { progress, setSession } = useStore()
   const { db, ready } = useWordDatabase()
-  const [words, setWords] = useState<{ word: Word; level: JLPTLevel }[]>([])
+  const [words, setWords] = useState<{ word: Word; level: JLPTLevel; isWrongWord?: boolean }[]>([])
   const [index, setIndex] = useState(0)
   const [isFlipped, setIsFlipped] = useState(false)
+  // Guards the 150ms card-swap transition so a fast double-tap on the nav arrows
+  // can't fire two index updates (which could skip a card or run past the end).
+  const transitioning = useRef(false)
 
   useEffect(() => {
     if (!ready || !progress) return
@@ -35,12 +39,17 @@ export function StudyPage({ onNavigate }: Props) {
   const displayText = current.word.kanji ?? current.word.reading
 
   function goNext() {
+    if (transitioning.current) return
+    hapticLight()
     setIsFlipped(false)
     if (index < words.length - 1) {
-      setTimeout(() => setIndex(i => i + 1), 150)
+      transitioning.current = true
+      setTimeout(() => { setIndex(i => i + 1); transitioning.current = false }, 150)
     } else {
-      // All studied — go to quiz
-      const questions = db.makeQuizQuestions(words)
+      // Study shows ALL words (10 new + up to 2 wrong); the quiz uses a random 10
+      // drawn from that full set.
+      const quizWords = [...words].sort(() => Math.random() - 0.5).slice(0, 10)
+      const questions = db.makeQuizQuestions(quizWords)
       setSession({ words, questions, currentWordIndex:0,
         currentQuestionIndex:0, score:0, phase:'quiz' })
       onNavigate('quiz')
@@ -48,12 +57,15 @@ export function StudyPage({ onNavigate }: Props) {
   }
 
   function goPrev() {
-    if (index === 0) return
+    if (index === 0 || transitioning.current) return
+    hapticLight()
     setIsFlipped(false)
-    setTimeout(() => setIndex(i => i - 1), 150)
+    transitioning.current = true
+    setTimeout(() => { setIndex(i => i - 1); transitioning.current = false }, 150)
   }
 
   function speak() {
+    hapticLight()
     if (!('speechSynthesis' in window)) return
     const utter = new SpeechSynthesisUtterance(current.word.reading)
     utter.lang = 'ja-JP'
@@ -80,24 +92,44 @@ export function StudyPage({ onNavigate }: Props) {
 
       <ProgressBar value={index + 1} total={words.length} color="var(--accent)" height={4} />
 
-      {/* Card */}
+      {/* Card — only the bottom half flips (top half stays put so taps near the
+          reading/listen controls don't accidentally reveal the meaning). */}
       <div style={{ flex:1, display:'flex', alignItems:'center',
-        justifyContent:'center', perspective:1000 }}
-        onClick={() => setIsFlipped(f => !f)}>
+        justifyContent:'center', perspective:1000 }}>
 
-        <div style={{
-          width:'100%', height:300,
-          position:'relative', transformStyle:'preserve-3d',
-          transition:'transform 0.4s ease',
-          transform: isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)',
-          cursor:'pointer',
-        }}>
+        <div
+          onClick={(e) => {
+            const rect = e.currentTarget.getBoundingClientRect()
+            if (e.clientY - rect.top > rect.height / 2) {
+              hapticLight()
+              setIsFlipped(f => !f)
+            }
+          }}
+          style={{
+            width:'100%', height:300,
+            position:'relative', transformStyle:'preserve-3d',
+            transition:'transform 0.4s ease',
+            transform: isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)',
+            cursor:'pointer',
+          }}>
           {/* Front */}
           <div style={{ position:'absolute', inset:0, backfaceVisibility:'hidden',
             WebkitBackfaceVisibility:'hidden',
             background:'var(--card-bg)', borderRadius:20,
             display:'flex', flexDirection:'column',
             alignItems:'center', justifyContent:'center', gap:16, padding:32 }}>
+
+            {current.isWrongWord && (
+              <div style={{
+                position:'absolute', top:16, right:16,
+                background:'rgba(244,67,54,0.15)',
+                border:'1px solid rgba(244,67,54,0.3)',
+                color:'var(--fail)', fontSize:11, fontWeight:700,
+                padding:'3px 8px', borderRadius:6,
+              }}>
+                틀렸던 단어
+              </div>
+            )}
 
             <div className="level-badge" style={{ background:`${levelColor}20`,
               color:levelColor }}>{current.level.toUpperCase()}</div>
@@ -156,10 +188,11 @@ export function StudyPage({ onNavigate }: Props) {
       <div style={{ display:'flex', justifyContent:'space-between',
         alignItems:'center', padding:'0 0 40px' }}>
         <button onClick={goPrev} disabled={index === 0}
-          style={{ background:'none', border:'none', fontSize:28,
+          style={{ background:'none', border:'none', fontSize:36,
             color: index === 0 ? 'rgba(255,255,255,0.15)' : 'var(--text-primary)',
             cursor: index === 0 ? 'not-allowed' : 'pointer',
-            padding:'8px 16px' }}>
+            padding:'12px 20px', minWidth:60, minHeight:60,
+            display:'flex', alignItems:'center', justifyContent:'center' }}>
           ‹
         </button>
 
@@ -174,9 +207,12 @@ export function StudyPage({ onNavigate }: Props) {
           </div>
         )}
 
-        <button onClick={goNext} disabled={index === words.length - 1 && isFlipped}
-          style={{ background:'none', border:'none', fontSize:28,
-            color:'var(--text-primary)', cursor:'pointer', padding:'8px 16px' }}>
+        <button onClick={goNext} disabled={index === words.length - 1}
+          style={{ background:'none', border:'none', fontSize:36,
+            color: index === words.length - 1 ? 'rgba(255,255,255,0.15)' : 'var(--text-primary)',
+            cursor: index === words.length - 1 ? 'not-allowed' : 'pointer',
+            padding:'12px 20px', minWidth:60, minHeight:60,
+            display:'flex', alignItems:'center', justifyContent:'center' }}>
           ›
         </button>
       </div>

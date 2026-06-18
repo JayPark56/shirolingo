@@ -128,7 +128,8 @@ export function HomePage({ onNavigate, onShowHelp }: Props) {
               <button
                 className="btn-primary"
                 onClick={() => onNavigate('review')}
-                style={{ background: 'linear-gradient(135deg, #6B4FBB, #9B6FDB)' }}
+                style={{ background: 'linear-gradient(135deg, #6B4FBB, #9B6FDB)',
+                  fontFamily: 'Paperlogy, sans-serif' }}
               >
                 복습하기
               </button>

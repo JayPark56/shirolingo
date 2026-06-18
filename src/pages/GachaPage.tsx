@@ -3,6 +3,7 @@ import { useStore } from '../store/useStore'
 import { useFirebaseSync } from '../hooks/useFirebaseSync'
 import { drawGacha } from '../hooks/useGacha'
 import { PixelCharacter } from '../components/PixelCharacter'
+import { hapticMedium } from '../utils/haptics'
 import type { GachaResult } from '../types'
 
 type RevealPhase = 'idle' | 'shaking' | 'flashing' | 'paused' | 'flipping' | 'revealed' | 'done'
@@ -35,6 +36,7 @@ export function GachaPage({ isFirstLaunch, isSurprise = false, onComplete }: Pro
 
   function handleCardTap() {
     if (phase !== 'idle' || !result) return
+    hapticMedium()
     playRevealSequence(result)
   }
 
