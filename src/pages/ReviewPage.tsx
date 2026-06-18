@@ -206,23 +206,16 @@ export function ReviewPage({ onNavigate }: Props) {
         <ProgressBar value={currentIndex + 1} total={words.length}
           color="#9B6FDB" height={4} />
 
-        <div style={{ flex: 1, display: 'flex', alignItems: 'center',
-          justifyContent: 'center', perspective: 1000 }}>
+        <div style={{ flex: 1, display: 'flex', flexDirection: 'column',
+          alignItems: 'center', justifyContent: 'center', gap: 16 }}>
 
-          <div
-            onClick={(e) => {
-              const rect = e.currentTarget.getBoundingClientRect()
-              if (e.clientY - rect.top > rect.height / 2) {
-                hapticLight()
-                setIsFlipped(f => !f)
-              }
-            }}
-            style={{
-            width: '100%', height: 300, position: 'relative',
+          <div style={{ position: 'relative', width: '100%', height: 300, perspective: 1000 }}>
+
+            <div style={{
+            width: '100%', height: '100%', position: 'relative',
             transformStyle: 'preserve-3d',
             transition: 'transform 0.4s ease',
             transform: isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)',
-            cursor: 'pointer',
           }}>
             {/* Front */}
             <div style={{ position: 'absolute', inset: 0,
@@ -244,8 +237,6 @@ export function ReviewPage({ onNavigate }: Props) {
                   padding: '8px 20px', fontSize: 14, cursor: 'pointer' }}>
                 발음 듣기
               </button>
-              <div style={{ fontSize: 12, color: 'var(--text-secondary)',
-                opacity: 0.5 }}>탭하여 뜻 보기</div>
             </div>
 
             {/* Back */}
@@ -275,43 +266,52 @@ export function ReviewPage({ onNavigate }: Props) {
               )}
             </div>
           </div>
-        </div>
 
-        <div style={{ display: 'flex', justifyContent: 'space-between',
-          alignItems: 'center', padding: '0 0 40px' }}>
+          {/* Prev — inside the card, bottom-left */}
           <button onClick={() => { hapticLight(); setIsFlipped(false); setCurrentIndex(i => Math.max(0, i - 1)) }}
             disabled={currentIndex === 0}
-            style={{ background: 'none', border: 'none', fontSize: 36,
-              color: currentIndex === 0 ? 'rgba(255,255,255,0.15)' : 'var(--text-primary)',
+            style={{ position: 'absolute', bottom: 14, left: 14, zIndex: 5,
+              background: 'rgba(255,255,255,0.06)', border: 'none', borderRadius: 10,
+              padding: '8px 14px', fontSize: 13, fontWeight: 600,
+              color: currentIndex === 0 ? 'rgba(255,255,255,0.2)' : 'var(--text-primary)',
               cursor: currentIndex === 0 ? 'not-allowed' : 'pointer',
-              padding: '12px 20px', minWidth: 60, minHeight: 60,
-              display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            ‹
+              display: 'flex', alignItems: 'center', gap: 4,
+              fontFamily: 'Paperlogy, sans-serif' }}>
+            ‹ 이전
           </button>
 
+          {/* Next / 다음 — inside the card, bottom-right */}
           {currentIndex === words.length - 1 ? (
-            <button className="btn-primary"
-              onClick={() => { hapticLight(); setPhase('quizPrompt') }}
-              style={{ maxWidth: 200, fontSize: 15,
-                background: 'linear-gradient(135deg, #6B4FBB, #9B6FDB)' }}>
+            <button onClick={() => { hapticLight(); setPhase('quizPrompt') }}
+              style={{ position: 'absolute', bottom: 14, right: 14, zIndex: 5,
+                background: 'linear-gradient(135deg, #6B4FBB, #9B6FDB)',
+                border: 'none', borderRadius: 10, padding: '8px 16px',
+                fontSize: 13, fontWeight: 700, color: 'white',
+                cursor: 'pointer', fontFamily: 'Paperlogy, sans-serif' }}>
               다음
             </button>
           ) : (
-            <div style={{ fontSize: 12, color: 'var(--text-secondary)' }}>
-              탭하여 뒤집기
-            </div>
+            <button onClick={() => { hapticLight(); setIsFlipped(false); setCurrentIndex(i => Math.min(words.length - 1, i + 1)) }}
+              style={{ position: 'absolute', bottom: 14, right: 14, zIndex: 5,
+                background: 'rgba(255,255,255,0.06)', border: 'none', borderRadius: 10,
+                padding: '8px 14px', fontSize: 13, fontWeight: 600,
+                color: 'var(--text-primary)', cursor: 'pointer',
+                display: 'flex', alignItems: 'center', gap: 4,
+                fontFamily: 'Paperlogy, sans-serif' }}>
+              다음 ›
+            </button>
           )}
-
-          <button onClick={() => { hapticLight(); setIsFlipped(false); setCurrentIndex(i => Math.min(words.length - 1, i + 1)) }}
-            disabled={currentIndex === words.length - 1}
-            style={{ background: 'none', border: 'none', fontSize: 36,
-              color: currentIndex === words.length - 1 ? 'rgba(255,255,255,0.15)' : 'var(--text-primary)',
-              cursor: currentIndex === words.length - 1 ? 'not-allowed' : 'pointer',
-              padding: '12px 20px', minWidth: 60, minHeight: 60,
-              display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            ›
-          </button>
         </div>
+
+        {/* Flip button below the card */}
+        <button onClick={() => { hapticLight(); setIsFlipped(f => !f) }}
+          style={{ width: '100%', background: 'rgba(255,255,255,0.06)',
+            border: 'none', borderRadius: 12, padding: 14,
+            color: 'var(--text-secondary)', fontSize: 14, cursor: 'pointer',
+            fontFamily: 'Paperlogy, sans-serif' }}>
+          여기 눌러서 뜻 보기
+        </button>
+      </div>
       </div>
     )
   }

@@ -92,25 +92,17 @@ export function StudyPage({ onNavigate }: Props) {
 
       <ProgressBar value={index + 1} total={words.length} color="var(--accent)" height={4} />
 
-      {/* Card — only the bottom half flips (top half stays put so taps near the
-          reading/listen controls don't accidentally reveal the meaning). */}
-      <div style={{ flex:1, display:'flex', alignItems:'center',
-        justifyContent:'center', perspective:1000 }}>
+      {/* Card */}
+      <div style={{ flex:1, display:'flex', flexDirection:'column',
+        alignItems:'center', justifyContent:'center', gap:16 }}>
 
-        <div
-          onClick={(e) => {
-            const rect = e.currentTarget.getBoundingClientRect()
-            if (e.clientY - rect.top > rect.height / 2) {
-              hapticLight()
-              setIsFlipped(f => !f)
-            }
-          }}
-          style={{
-            width:'100%', height:300,
+        <div style={{ position:'relative', width:'100%', height:300, perspective:1000 }}>
+
+          <div style={{
+            width:'100%', height:'100%',
             position:'relative', transformStyle:'preserve-3d',
             transition:'transform 0.4s ease',
             transform: isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)',
-            cursor:'pointer',
           }}>
           {/* Front */}
           <div style={{ position:'absolute', inset:0, backfaceVisibility:'hidden',
@@ -149,9 +141,6 @@ export function StudyPage({ onNavigate }: Props) {
                 alignItems:'center', gap:6 }}>
               🔊 발음 듣기
             </button>
-
-            <div style={{ fontSize:12, color:'var(--text-secondary)',
-              opacity:0.5, marginTop:8 }}>탭하여 뜻 보기</div>
           </div>
 
           {/* Back */}
@@ -181,39 +170,49 @@ export function StudyPage({ onNavigate }: Props) {
               </div>
             )}
           </div>
-        </div>
-      </div>
-
-      {/* Navigation */}
-      <div style={{ display:'flex', justifyContent:'space-between',
-        alignItems:'center', padding:'0 0 40px' }}>
-        <button onClick={goPrev} disabled={index === 0}
-          style={{ background:'none', border:'none', fontSize:36,
-            color: index === 0 ? 'rgba(255,255,255,0.15)' : 'var(--text-primary)',
-            cursor: index === 0 ? 'not-allowed' : 'pointer',
-            padding:'12px 20px', minWidth:60, minHeight:60,
-            display:'flex', alignItems:'center', justifyContent:'center' }}>
-          ‹
-        </button>
-
-        {index === words.length - 1 ? (
-          <button className="btn-primary" onClick={goNext}
-            style={{ maxWidth:200, fontSize:15 }}>
-            테스트 시작
-          </button>
-        ) : (
-          <div style={{ fontSize:12, color:'var(--text-secondary)' }}>
-            탭하여 뒤집기
           </div>
-        )}
 
-        <button onClick={goNext} disabled={index === words.length - 1}
-          style={{ background:'none', border:'none', fontSize:36,
-            color: index === words.length - 1 ? 'rgba(255,255,255,0.15)' : 'var(--text-primary)',
-            cursor: index === words.length - 1 ? 'not-allowed' : 'pointer',
-            padding:'12px 20px', minWidth:60, minHeight:60,
-            display:'flex', alignItems:'center', justifyContent:'center' }}>
-          ›
+          {/* Prev — inside the card, bottom-left */}
+          <button onClick={goPrev} disabled={index === 0}
+            style={{ position:'absolute', bottom:14, left:14, zIndex:5,
+              background:'rgba(255,255,255,0.06)', border:'none', borderRadius:10,
+              padding:'8px 14px', fontSize:13, fontWeight:600,
+              color: index === 0 ? 'rgba(255,255,255,0.2)' : 'var(--text-primary)',
+              cursor: index === 0 ? 'not-allowed' : 'pointer',
+              display:'flex', alignItems:'center', gap:4,
+              fontFamily:'Paperlogy, sans-serif' }}>
+            ‹ 이전
+          </button>
+
+          {/* Next / 테스트 시작 — inside the card, bottom-right */}
+          {index === words.length - 1 ? (
+            <button onClick={goNext}
+              style={{ position:'absolute', bottom:14, right:14, zIndex:5,
+                background:'var(--accent)', border:'none', borderRadius:10,
+                padding:'8px 16px', fontSize:13, fontWeight:700, color:'white',
+                cursor:'pointer', fontFamily:'Paperlogy, sans-serif' }}>
+              테스트 시작
+            </button>
+          ) : (
+            <button onClick={goNext}
+              style={{ position:'absolute', bottom:14, right:14, zIndex:5,
+                background:'rgba(255,255,255,0.06)', border:'none', borderRadius:10,
+                padding:'8px 14px', fontSize:13, fontWeight:600,
+                color:'var(--text-primary)', cursor:'pointer',
+                display:'flex', alignItems:'center', gap:4,
+                fontFamily:'Paperlogy, sans-serif' }}>
+              다음 ›
+            </button>
+          )}
+        </div>
+
+        {/* Flip button below the card */}
+        <button onClick={() => { hapticLight(); setIsFlipped(f => !f) }}
+          style={{ width:'100%', background:'rgba(255,255,255,0.06)',
+            border:'none', borderRadius:12, padding:14,
+            color:'var(--text-secondary)', fontSize:14, cursor:'pointer',
+            fontFamily:'Paperlogy, sans-serif' }}>
+          여기 눌러서 뜻 보기
         </button>
       </div>
     </div>
