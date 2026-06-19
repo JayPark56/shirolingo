@@ -58,6 +58,7 @@ export function defaultProgress(userId: string): UserProgress {
     totalDaysCompleted: 0,
     currentStreak: 0,
     longestStreak: 0,
+    activeCharacterIds: [],
     activeCharacterId: '',
     ownedCharacterIds: [],
     completedCharacterIds: [],

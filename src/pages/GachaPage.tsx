@@ -89,12 +89,23 @@ export function GachaPage({ isFirstLaunch, isSurprise = false, onComplete }: Pro
 
   async function handleConfirm() {
     if (!result || !progress) return
+    const currentActive = progress.activeCharacterIds ??
+      (progress.activeCharacterId ? [progress.activeCharacterId] : [])
+
+    // Add to an active training slot if under 5; otherwise it just joins the collection.
+    const newActive = currentActive.includes(result.characterId)
+      ? currentActive
+      : currentActive.length < 5
+        ? [...currentActive, result.characterId]
+        : currentActive
+
     const updated = {
       ...progress,
-      ownedCharacterIds: [...progress.ownedCharacterIds, result.characterId],
-      activeCharacterId: progress.ownedCharacterIds.length === 0
-        ? result.characterId
-        : progress.activeCharacterId,
+      ownedCharacterIds: progress.ownedCharacterIds.includes(result.characterId)
+        ? progress.ownedCharacterIds
+        : [...progress.ownedCharacterIds, result.characterId],
+      activeCharacterIds: newActive,
+      activeCharacterId: newActive[0] ?? result.characterId,
     }
     await saveProgress(updated)
     onComplete()

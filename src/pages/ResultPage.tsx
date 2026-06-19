@@ -14,6 +14,7 @@ export function ResultPage({ onNavigate }: Props) {
   const [evolved, setEvolved] = useState(false)
   const [showGacha, setShowGacha] = useState(false)
   const [pendingGacha, setPendingGacha] = useState(false)
+  const [evolutions, setEvolutions] = useState<{ charId: string; newStage: number }[]>([])
 
   const score = currentSession?.score ?? 0
   const total = currentSession?.questions.length ?? 10
@@ -25,11 +26,27 @@ export function ResultPage({ onNavigate }: Props) {
     const p = useStore.getState().progress
     if (!passed || !p || !currentSession) return
 
-    const activeId = p.activeCharacterId
-    const prevDays = p.characterDaysMap[activeId] ?? 0
-    const prevStage = Math.min(Math.floor(prevDays / 7), 3)
-    const newDays = prevDays + 1
-    const newStage = Math.min(Math.floor(newDays / 7), 3)
+    // Idempotency: if this study was already recorded today, don't apply it twice.
+    // HomePage blocks a real 2nd same-day study, so this only guards against the
+    // effect re-running on a remount (e.g. React StrictMode in dev) — without it,
+    // the second run reads the already-incremented store and double-counts.
+    if (p.lastStudyDate &&
+      new Date(p.lastStudyDate).toDateString() === new Date().toDateString()) return
+
+    // All active characters gain +1 day on a passing study.
+    const activeIds = p.activeCharacterIds ?? (p.activeCharacterId ? [p.activeCharacterId] : [])
+    const newCharacterDaysMap = { ...p.characterDaysMap }
+    for (const charId of activeIds) {
+      newCharacterDaysMap[charId] = (newCharacterDaysMap[charId] ?? 0) + 1
+    }
+
+    // Which characters crossed a 7-day evolution boundary this session?
+    const evos: { charId: string; newStage: number }[] = []
+    for (const charId of activeIds) {
+      const prevStage = Math.min(Math.floor((p.characterDaysMap[charId] ?? 0) / 7), 3)
+      const newStage = Math.min(Math.floor(newCharacterDaysMap[charId] / 7), 3)
+      if (newStage > prevStage) evos.push({ charId, newStage })
+    }
 
     const today = new Date()
     const lastDate = p.lastStudyDate
@@ -58,7 +75,7 @@ export function ResultPage({ onNavigate }: Props) {
       currentStreak: newStreak,
       longestStreak: Math.max(p.longestStreak, newStreak),
       lastStudyDate: today.toISOString(),
-      characterDaysMap: { ...p.characterDaysMap, [activeId]: newDays },
+      characterDaysMap: newCharacterDaysMap,
       // Dedupe: wrong words re-injected into the daily set are already studied,
       // so a plain append would accumulate duplicate ids in the persisted doc.
       studiedWordIds: Array.from(new Set([
@@ -68,8 +85,9 @@ export function ResultPage({ onNavigate }: Props) {
     }
 
     saveProgress(updated)
+    setEvolutions(evos)
 
-    const willEvolve = newStage > prevStage
+    const willEvolve = evos.length > 0
     if (willEvolve) {
       setTimeout(() => setEvolved(true), 500)
     }
@@ -89,11 +107,15 @@ export function ResultPage({ onNavigate }: Props) {
     }} />
   }
 
-  const activeChar = progress
-    ? ALL_CHARACTERS.find(c => c.id === progress.activeCharacterId)
+  // Show the first character that evolved this session, else the main character.
+  const activeIdsRender = progress?.activeCharacterIds ??
+    (progress?.activeCharacterId ? [progress.activeCharacterId] : [])
+  const displayCharId = evolutions[0]?.charId ?? activeIdsRender[0] ?? ''
+  const displayChar = displayCharId
+    ? ALL_CHARACTERS.find(c => c.id === displayCharId)
     : null
-  const days = progress?.characterDaysMap[progress?.activeCharacterId ?? ''] ?? 0
-  const stage = Math.min(Math.floor(days / 7), 3)
+  const displayDays = progress?.characterDaysMap[displayCharId] ?? 0
+  const displayStage = Math.min(Math.floor(displayDays / 7), 3)
 
   return (
     <div style={{ display:'flex', flexDirection:'column', alignItems:'center',
@@ -113,17 +135,24 @@ export function ResultPage({ onNavigate }: Props) {
         </div>
       </div>
 
-      {passed && activeChar && (
+      {passed && displayChar && (
         <div className="card" style={{ width:'100%', maxWidth:280 }}>
           <div style={{ display:'flex', justifyContent:'center',
             transform: evolved ? 'scale(1.2)' : 'scale(1)',
             transition:'transform 0.5s cubic-bezier(0.175,0.885,0.32,1.275)' }}>
-            <PixelCharacter characterId={activeChar.id} stage={stage} pixelSize={10} />
+            <PixelCharacter characterId={displayChar.id} stage={displayStage} pixelSize={10} />
           </div>
-          {evolved && (
-            <div style={{ color:'var(--accent-secondary)', fontWeight:700,
-              fontSize:18, marginTop:12, animation:'slideUp 0.4s ease-out' }}>
-              진화했다! ⭐
+          {evolutions.length > 0 && (
+            <div style={{ marginTop:8 }}>
+              {evolutions.map(({ charId }) => {
+                const char = ALL_CHARACTERS.find(c => c.id === charId)
+                return (
+                  <div key={charId} style={{ fontSize:13, color:'var(--accent-secondary)',
+                    fontWeight:700, marginTop:4, animation:'slideUp 0.4s ease-out' }}>
+                    {char?.characterName} 진화! ⭐
+                  </div>
+                )
+              })}
             </div>
           )}
         </div>

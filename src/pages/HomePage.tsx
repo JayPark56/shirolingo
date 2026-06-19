@@ -21,12 +21,12 @@ export function HomePage({ onNavigate, onShowHelp }: Props) {
 
   if (!progress) return null
 
-  const activeChar = ALL_CHARACTERS.find(c => c.id === progress.activeCharacterId)
-  const days = progress.characterDaysMap[progress.activeCharacterId] ?? 0
-  const stage = Math.min(Math.floor(days / 7), 3)
-  const daysInStage = days % 7
+  const activeIds = progress.activeCharacterIds ??
+    (progress.activeCharacterId ? [progress.activeCharacterId] : [])
+  const activeChars = activeIds
+    .map(id => ALL_CHARACTERS.find(c => c.id === id))
+    .filter(Boolean)
   const totalDays = progress.totalDaysCompleted
-  const evolutionLabel = activeChar?.evolutionLabels[stage] ?? ''
 
   const todayDone = isToday(progress.lastStudyDate)
   const hasStudiedBefore = (progress.studiedWordIds?.length ?? 0) > 0
@@ -58,27 +58,62 @@ export function HomePage({ onNavigate, onShowHelp }: Props) {
         </div>
       </div>
 
-      {/* Character card */}
-      <div className="card" style={{ marginBottom:16, textAlign:'center' }}>
-        {activeChar && (
-          <>
-            <div style={{ display:'flex', justifyContent:'center' }}>
-              <PixelCharacter characterId={activeChar.id} stage={stage} pixelSize={8} />
+      {/* Active characters grid */}
+      {activeChars.length > 0 && (
+        <div className="card" style={{ marginBottom:16 }}>
+          <div style={{ fontSize:12, color:'var(--text-secondary)',
+            marginBottom:12, fontWeight:600 }}>
+            육성 중인 캐릭터 ({activeIds.length}/5)
+          </div>
+
+          <div style={{ display:'grid',
+            gridTemplateColumns: activeChars.length === 1
+              ? '1fr'
+              : activeChars.length <= 2
+                ? '1fr 1fr'
+                : 'repeat(3, 1fr)',
+            gap:12 }}>
+            {activeChars.map(char => {
+              if (!char) return null
+              const days = progress.characterDaysMap[char.id] ?? 0
+              const stage = Math.min(Math.floor(days / 7), 3)
+              const daysInStage = days % 7
+              const label = char.evolutionLabels[stage] ?? char.characterName
+
+              return (
+                <div key={char.id} style={{ textAlign:'center',
+                  background:'rgba(255,255,255,0.03)',
+                  borderRadius:12, padding:'12px 8px' }}>
+                  <PixelCharacter characterId={char.id} stage={stage}
+                    pixelSize={activeChars.length <= 2 ? 7 : 5} />
+                  <div style={{ fontSize:11, fontWeight:700,
+                    color:'var(--text-primary)', marginTop:6,
+                    fontFamily:'Paperlogy, sans-serif' }}>
+                    {label}
+                  </div>
+                  <div style={{ fontSize:10, color:'var(--text-secondary)', marginTop:2 }}>
+                    {char.seriesName}
+                  </div>
+                  <div style={{ marginTop:6 }}>
+                    <ProgressBar value={daysInStage} total={7}
+                      color="var(--accent)" height={3} />
+                  </div>
+                  <div style={{ fontSize:9, color:'var(--text-secondary)', marginTop:3 }}>
+                    {days}일
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+
+          {activeIds.length < 5 && (
+            <div style={{ marginTop:12, textAlign:'center',
+              fontSize:11, color:'var(--text-secondary)' }}>
+              컬렉션에서 최대 {5 - activeIds.length}마리 더 추가할 수 있어요
             </div>
-            <div style={{ marginTop:12, fontFamily:'monospace', fontSize:14,
-              fontWeight:700, color:'var(--text-primary)' }}>{evolutionLabel}</div>
-            <div style={{ fontSize:12, color:'var(--text-secondary)', marginTop:4 }}>
-              {activeChar.seriesName} · {activeChar.characterName}
-            </div>
-            <div style={{ marginTop:12 }}>
-              <ProgressBar value={daysInStage} total={7} color="var(--accent)" />
-            </div>
-            <div style={{ fontSize:11, color:'var(--text-secondary)', marginTop:6 }}>
-              {daysInStage}/7일 · 총 {days}일
-            </div>
-          </>
-        )}
-      </div>
+          )}
+        </div>
+      )}
 
       {/* Daily study card */}
       <div className="card">

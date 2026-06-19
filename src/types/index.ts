@@ -44,7 +44,8 @@ export interface UserProgress {
   totalDaysCompleted: number
   currentStreak: number
   longestStreak: number
-  activeCharacterId: string
+  activeCharacterIds: string[]      // up to 5, ordered (first = "main" for display)
+  activeCharacterId: string         // backward compat, = activeCharacterIds[0] ?? ''
   ownedCharacterIds: string[]
   completedCharacterIds: string[]
   lastStudyDate: string | null

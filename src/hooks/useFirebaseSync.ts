@@ -14,7 +14,12 @@ export function useFirebaseSync() {
 
     const unsub = onSnapshot(ref, snap => {
       if (snap.exists()) {
-        setProgress(snap.data() as UserProgress)
+        const data = snap.data() as UserProgress
+        // Migrate old single-character data to the multi-character model.
+        if (!Array.isArray(data.activeCharacterIds)) {
+          data.activeCharacterIds = data.activeCharacterId ? [data.activeCharacterId] : []
+        }
+        setProgress(data)
       } else {
         const fresh = defaultProgress(userId)
         setDoc(ref, fresh)
